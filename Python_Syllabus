@@ -1,0 +1,238 @@
+Python Overview
+  Overview 
+  History 
+  Features 
+  Python 2 Vs Python 3 
+
+Python Environment
+  Environment Setup 
+  From Command Line 
+  Script From Command Line 
+  Command Line Options 
+  Script As Executable 
+  IDLE Interactive Shell 
+
+Python Basic Syntax
+  Basic Syntax  
+  Indentifiers 
+  Keywords 
+  Lines & Indentation 
+  Multiline Statements 
+  Quotations 
+  Comments 
+  User Input 
+  Command Line Argument 
+
+Python Variables & Data Types
+  Variables 
+  Standard Data Types 
+
+Python Numbers
+  Numbers 
+  Mathematical Functions 
+  Random Number Function 
+  Trigonometric Functions 
+  Mathematical Constants 
+  Trigonometric Inverse Functions 
+  Trigonometric Misc Functions 
+
+Python Basic Operators
+  Basic Operators 
+  Arithmetic Operators 
+  Bitwise Operators 
+  Logical Operators 
+  Membership Operators 
+  Identity Operators 
+  Operator Precedence 
+
+Python Strings
+Strings 
+Escape Characters 
+String Basic Operators 
+String Formatting Operators 
+Triple Quotes 
+String Boolean Function 
+String Encoding Functions 
+Misc Functions 
+
+Python Lists
+Python - List 
+Python - Access Update & Delete List 
+Python - Basic List Operation 
+Python - Indexing, Slicing & Matrixes 
+Python - List Methods 
+Python - Built-In List Functions  
+
+Python Decision Making
+Python - Decision Making 
+Python - If Statement 
+Python - If Else Statement 
+Python - If Elif Else Statement 
+Python - Single Statement Suites 
+
+Python Loops
+Python - Loops 
+Python - While Loop 
+Python - Infinite While Loop 
+Python - While Loop Else Statement 
+Python - While Loop Single Statement Suites 
+Python - For Loop 
+Python - For Loop Using Rang() Function 
+Python - For Loop Iterating By Sequence Index 
+Python - Nested Loop 
+Python - Loop Control Statements 
+Python - Break Statement 
+Python - Continue Statement 
+Python - Pass Statement 
+Python - Using Else With For Loop 
+
+Python Date & Time
+Python - Date & Time 
+
+Python Tuples
+Python - Tuples 
+Python - Update And Delete Tuples 
+Python - Basic Tuple Operations 
+Python - Indexing & Slicing Of Tuple 
+Python - Tuple No Enclosing Delimiters 
+Python - Built-In Tuple Function 
+
+Python Dictionary
+Python - Dictionary 
+Python - Update & Delete Dictionary 
+Python - Properties Of Dictionary Keys 
+Python - Built-In Dictionary Function 
+Python - Dictionary Method 
+
+Python Functions
+Python - Functions 
+Python - Parameter Pass By Reference 
+Python - Function Arguments 
+Python - Required Arguments 
+Python - Keyword Arguments 
+Python - Default Arguments 
+Python - Variable Length Arguments 
+Python - Anonymous Functions 
+Python - The Return Argument 
+Python - Scope Of Variables 
+
+Python Modules
+Python - Modules 
+Python - The Import Statement 
+Python - From Import Statement 
+Python - Executing Module As Script 
+Python - Loading Module 
+Python - Namespace & Scoping 
+Python - Reload() Function 
+Python - Package 
+
+Python File I/O
+Python - Printing To Screen 
+Python - Reading Keyboard Input 
+Python - Opening & Closing File 
+Python - File Object Attributes 
+Python - OS Module Method 
+Python - Renaming & Deleting File 
+Python - Directories 
+Python - The OS.Open() Method 
+
+Python Exceptions
+Python - Exceptions 
+Python - Try… Except With Multiple Experssions 
+Python - Try Finally Clause 
+Python - Argument Of Exception 
+Python - Raising An Exception 
+Python - Standard Exceptions 
+Python - User Defined Exceptions 
+Python - Assertions 
+
+Python OOPs
+Python - Overview Of OOPs Terminology 
+Python - Class & Object 
+Python - Accessing Attributes 
+Python - Class Inheritance 
+Python - Overriding Methods 
+Python - Operator Overloading 
+Python - Data Hiding 
+Python - Garbage Collection 
+
+Python Regular Expressions
+Python - Regular Expressions 
+Python - Compilation Flags 
+Python - Match Function 
+Python - Search Function 
+Python - Match Vs Searching 
+Python - Searching & Replace 
+Python - Regular Expression Modifiers 
+
+Python CGI Programming
+Python - CGI Programming 
+Python - Web Server Configuration 
+Python - First CGI Program 
+Python - HTTP Header 
+Python - CGI Environment Variables 
+Python - HTTP Methods 
+Python - GET Method 
+Python - Post Method 
+Python - Passing From Data To CGI Program 
+Python - Cookies 
+Python - File Upload 
+
+Python Sockets
+Python - Network Programming 
+Python - What Is Socket? 
+Python - Socket Module 
+Python - Server Socket Method 
+Python - Client Socket Method 
+Python - General Socket Method 
+Python - Simple Server 
+Python - Simple Client 
+Python - Internet Modules 
+
+Python MySQL
+Python - MySQL Database 
+Python - PyMySQL 
+Python - Database Connection 
+Python - Create Database Table 
+Python - Insert Operation 
+Python - Read Operation 
+Python - Update Operations 
+Python - Performing Transactions 
+Python - Commit & Rollback Operation 
+Python - Handling Errors 
+
+Python Email
+Python - Sending Email Using SMTP 
+Python - Send Mail Function 
+Python - Sending Attachment With Email 
+Python - Sending Email With Gmail SMTP Server 
+
+Python Threading
+Python - Multithreaded Programming 
+Python - Starting A New Thread 
+Python - Creating Thread 
+Python - Synchronizing Threads 
+Python - Multithreaded Priority Queue 
+
+Python XML
+Python - XML Processing 
+Python - XML Parsing Architecture & APIs 
+Python - Parsing XML With SAX API 
+Python - The Make_parser Method 
+Python - The Parse Method 
+Python - ParseString Method 
+Python - Parsing XML With DOM API 
+
+Python GUI Programming
+Python - GUI Programming 
+Python - Geometry Management 
+Python - Event Driven Programming 
+Python - Button Widget 
+Python - Label Widget 
+Python - Canvas Widget 
+Python - Check Button Widget 
+Python - Entry Widget 
+Python - Listbox Widget 
+Python - Scale Widget 
+Python - Scrollbar Widget 
+Python - Message Box 
