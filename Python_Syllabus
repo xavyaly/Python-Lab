@@ -46,193 +46,193 @@ Python Basic Operators
   Operator Precedence 
 
 Python Strings
-Strings 
-Escape Characters 
-String Basic Operators 
-String Formatting Operators 
-Triple Quotes 
-String Boolean Function 
-String Encoding Functions 
-Misc Functions 
+  Strings 
+  Escape Characters 
+  String Basic Operators 
+  String Formatting Operators 
+  Triple Quotes 
+  String Boolean Function 
+  String Encoding Functions 
+  Misc Functions 
 
 Python Lists
-Python - List 
-Python - Access Update & Delete List 
-Python - Basic List Operation 
-Python - Indexing, Slicing & Matrixes 
-Python - List Methods 
-Python - Built-In List Functions  
+  List 
+  Access Update & Delete List 
+  Basic List Operation 
+  Indexing, Slicing & Matrixes 
+  List Methods 
+  Built-In List Functions  
 
 Python Decision Making
-Python - Decision Making 
-Python - If Statement 
-Python - If Else Statement 
-Python - If Elif Else Statement 
-Python - Single Statement Suites 
+  Decision Making 
+  If Statement 
+  If Else Statement 
+  If Elif Else Statement 
+  Single Statement Suites 
 
 Python Loops
-Python - Loops 
-Python - While Loop 
-Python - Infinite While Loop 
-Python - While Loop Else Statement 
-Python - While Loop Single Statement Suites 
-Python - For Loop 
-Python - For Loop Using Rang() Function 
-Python - For Loop Iterating By Sequence Index 
-Python - Nested Loop 
-Python - Loop Control Statements 
-Python - Break Statement 
-Python - Continue Statement 
-Python - Pass Statement 
-Python - Using Else With For Loop 
+  Loops 
+  While Loop 
+  Infinite While Loop 
+  While Loop Else Statement 
+  While Loop Single Statement Suites 
+  For Loop 
+  For Loop Using Rang() Function 
+  For Loop Iterating By Sequence Index 
+  Nested Loop 
+  Loop Control Statements 
+  Break Statement 
+  Continue Statement 
+  Pass Statement 
+  Using Else With For Loop 
 
 Python Date & Time
-Python - Date & Time 
+  Date & Time 
 
 Python Tuples
-Python - Tuples 
-Python - Update And Delete Tuples 
-Python - Basic Tuple Operations 
-Python - Indexing & Slicing Of Tuple 
-Python - Tuple No Enclosing Delimiters 
-Python - Built-In Tuple Function 
+  Tuples 
+  Update And Delete Tuples 
+  Basic Tuple Operations 
+  Indexing & Slicing Of Tuple 
+  Tuple No Enclosing Delimiters 
+  Built-In Tuple Function 
 
 Python Dictionary
-Python - Dictionary 
-Python - Update & Delete Dictionary 
-Python - Properties Of Dictionary Keys 
-Python - Built-In Dictionary Function 
-Python - Dictionary Method 
+  Dictionary 
+  Update & Delete Dictionary 
+  Properties Of Dictionary Keys 
+  Built-In Dictionary Function 
+  Dictionary Method 
 
 Python Functions
-Python - Functions 
-Python - Parameter Pass By Reference 
-Python - Function Arguments 
-Python - Required Arguments 
-Python - Keyword Arguments 
-Python - Default Arguments 
-Python - Variable Length Arguments 
-Python - Anonymous Functions 
-Python - The Return Argument 
-Python - Scope Of Variables 
+  Functions 
+  Parameter Pass By Reference 
+  Function Arguments 
+  Required Arguments 
+  Keyword Arguments 
+  Default Arguments 
+  Variable Length Arguments 
+  Anonymous Functions 
+  The Return Argument 
+  Scope Of Variables 
 
 Python Modules
-Python - Modules 
-Python - The Import Statement 
-Python - From Import Statement 
-Python - Executing Module As Script 
-Python - Loading Module 
-Python - Namespace & Scoping 
-Python - Reload() Function 
-Python - Package 
+  Modules 
+  The Import Statement 
+  From Import Statement 
+  Executing Module As Script 
+  Loading Module 
+  Namespace & Scoping 
+  Reload() Function 
+  Package 
 
 Python File I/O
-Python - Printing To Screen 
-Python - Reading Keyboard Input 
-Python - Opening & Closing File 
-Python - File Object Attributes 
-Python - OS Module Method 
-Python - Renaming & Deleting File 
-Python - Directories 
-Python - The OS.Open() Method 
+  Printing To Screen 
+  Reading Keyboard Input 
+  Opening & Closing File 
+  File Object Attributes 
+  OS Module Method 
+  Renaming & Deleting File 
+  Directories 
+  The OS.Open() Method 
 
 Python Exceptions
-Python - Exceptions 
-Python - Try… Except With Multiple Experssions 
-Python - Try Finally Clause 
-Python - Argument Of Exception 
-Python - Raising An Exception 
-Python - Standard Exceptions 
-Python - User Defined Exceptions 
-Python - Assertions 
+  Exceptions 
+  Try… Except With Multiple Experssions 
+  Try Finally Clause 
+  Argument Of Exception 
+  Raising An Exception 
+  Standard Exceptions 
+  User Defined Exceptions 
+  Assertions 
 
 Python OOPs
-Python - Overview Of OOPs Terminology 
-Python - Class & Object 
-Python - Accessing Attributes 
-Python - Class Inheritance 
-Python - Overriding Methods 
-Python - Operator Overloading 
-Python - Data Hiding 
-Python - Garbage Collection 
+  Overview Of OOPs Terminology 
+  Class & Object 
+  Accessing Attributes 
+  Class Inheritance 
+  Overriding Methods 
+  Operator Overloading 
+  Data Hiding 
+  Garbage Collection 
 
 Python Regular Expressions
-Python - Regular Expressions 
-Python - Compilation Flags 
-Python - Match Function 
-Python - Search Function 
-Python - Match Vs Searching 
-Python - Searching & Replace 
-Python - Regular Expression Modifiers 
+  Regular Expressions 
+  Compilation Flags 
+  Match Function 
+  Search Function 
+  Match Vs Searching 
+  Searching & Replace 
+  Regular Expression Modifiers 
 
 Python CGI Programming
-Python - CGI Programming 
-Python - Web Server Configuration 
-Python - First CGI Program 
-Python - HTTP Header 
-Python - CGI Environment Variables 
-Python - HTTP Methods 
-Python - GET Method 
-Python - Post Method 
-Python - Passing From Data To CGI Program 
-Python - Cookies 
-Python - File Upload 
+  CGI Programming 
+  Web Server Configuration 
+  First CGI Program 
+  HTTP Header 
+  CGI Environment Variables 
+  HTTP Methods 
+  GET Method 
+  Post Method 
+  Passing From Data To CGI Program 
+  Cookies 
+  File Upload 
 
 Python Sockets
-Python - Network Programming 
-Python - What Is Socket? 
-Python - Socket Module 
-Python - Server Socket Method 
-Python - Client Socket Method 
-Python - General Socket Method 
-Python - Simple Server 
-Python - Simple Client 
-Python - Internet Modules 
+  Network Programming 
+  What Is Socket? 
+  Socket Module 
+  Server Socket Method 
+  Client Socket Method 
+  General Socket Method 
+  Simple Server 
+  Simple Client 
+  Internet Modules 
 
 Python MySQL
-Python - MySQL Database 
-Python - PyMySQL 
-Python - Database Connection 
-Python - Create Database Table 
-Python - Insert Operation 
-Python - Read Operation 
-Python - Update Operations 
-Python - Performing Transactions 
-Python - Commit & Rollback Operation 
-Python - Handling Errors 
+  MySQL Database 
+  PyMySQL 
+  Database Connection 
+  Create Database Table 
+  Insert Operation 
+  Read Operation 
+  Update Operations 
+  Performing Transactions 
+  Commit & Rollback Operation 
+  Handling Errors 
 
 Python Email
-Python - Sending Email Using SMTP 
-Python - Send Mail Function 
-Python - Sending Attachment With Email 
-Python - Sending Email With Gmail SMTP Server 
+  Sending Email Using SMTP 
+  Send Mail Function 
+  Sending Attachment With Email 
+  Sending Email With Gmail SMTP Server 
 
 Python Threading
-Python - Multithreaded Programming 
-Python - Starting A New Thread 
-Python - Creating Thread 
-Python - Synchronizing Threads 
-Python - Multithreaded Priority Queue 
+  Multithreaded Programming 
+  Starting A New Thread 
+  Creating Thread 
+  Synchronizing Threads 
+  Multithreaded Priority Queue 
 
 Python XML
-Python - XML Processing 
-Python - XML Parsing Architecture & APIs 
-Python - Parsing XML With SAX API 
-Python - The Make_parser Method 
-Python - The Parse Method 
-Python - ParseString Method 
-Python - Parsing XML With DOM API 
+  XML Processing 
+  XML Parsing Architecture & APIs 
+  Parsing XML With SAX API 
+  The Make_parser Method 
+  The Parse Method 
+  ParseString Method 
+  Parsing XML With DOM API 
 
 Python GUI Programming
-Python - GUI Programming 
-Python - Geometry Management 
-Python - Event Driven Programming 
-Python - Button Widget 
-Python - Label Widget 
-Python - Canvas Widget 
-Python - Check Button Widget 
-Python - Entry Widget 
-Python - Listbox Widget 
-Python - Scale Widget 
-Python - Scrollbar Widget 
-Python - Message Box 
+  GUI Programming 
+  Geometry Management 
+  Event Driven Programming 
+  Button Widget 
+  Label Widget 
+  Canvas Widget 
+  Check Button Widget 
+  Entry Widget 
+  Listbox Widget 
+  Scale Widget 
+  Scrollbar Widget 
+  Message Box 
