@@ -1,6 +1,163 @@
-# Windows Platform
-# DOWNLOAD ALWAYS LATEST VERSION
+# IMPORTANT
+
+Python Official Website − https://www.python.org/
+
+Python Documentation Website − www.python.org/doc/
+
+******************************************************************************************************************************
+
+# WINDOWS PLATFORM
 
 https://www.python.org/downloads/windows/
 
-# 
+******************************************************************************************************************************
+
+# LINUX PLATFORM
+
+$sudo apt-get install python3-minimal - UBUNTU
+$yum install python - LINUX
+
+******************************************************************************************************************************
+
+# INSTALLATION FROM SOURCE
+
+Download Gzipped source tarball from Python's download URL − https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tgz
+
+Extract the tarball
+tar xvfz Python-3.5.1.tgz
+Configure and Install:
+cd Python-3.5.1
+./configure --prefix = /opt/python3.5.1
+make  
+sudo make install
+
+******************************************************************************************************************************
+
+# MAC OS
+
+Download Mac OS installers from this URL − https://www.python.org/downloads/mac-osx/
+
+Mac OS X 64-bit/32-bit installer − python-3.5.1-macosx10.6.pkg
+Mac OS X 32-bit i386/PPC installer − python-3.5.1-macosx10.5.pkg
+
+Double click this package file and follow the wizard instructions to install.
+
+******************************************************************************************************************************
+
+# SETTING PATH AT UNIX/LINUX
+
+In the csh shell − type setenv PATH "$PATH:/usr/local/bin/python3" and press Enter
+
+In the bash shell (Linux) − type export PYTHONPATH=/usr/local/bin/python3.4 and press Enter
+
+In the sh or ksh shell − type PATH="$PATH:/usr/local/bin/python3" and press Enter
+
+Note − /usr/local/bin/python3 is the path of the Python directory.
+
+******************************************************************************************************************************
+
+# SETTING PATH AT WINDOWS
+
+At the command prompt − type path %path%;C:\Python and press Enter.
+
+Note − C:\Python is the path of the Python directory
+
+******************************************************************************************************************************
+
+# RUNNING PYTHON
+
+There are three different ways to start Python −
+
+Interactive Interpreter
+You can start Python from Unix, DOS, or any other system that provides you a command-line interpreter or shell window.
+
+Enter python the command line.
+
+Start coding right away in the interactive interpreter.
+
+$python             # Unix/Linux
+
+or 
+
+python%             # Unix/Linux
+
+or 
+
+C:>python           # Windows/DOS
+
+or
+
+$python             # Mac os
+
+******************************************************************************************************************************
+
+# HOW TO RUN A SCRIPT
+
+Script from the Command-line
+A Python script can be executed at the command line by invoking the interpreter on your application.
+
+EXAMPLE:
+vi script.py
+<commands>
+:wq
+chmod +x script.py
+
+Proceed Further
+
+$python  script.py          # Unix/Linux
+
+or 
+
+python% script.py           # Unix/Linux
+
+or 
+
+C:>python script.py         # Windows/DOS
+
+******************************************************************************************************************************
+
+# INTEGRATED DEVELOPMENT ENVIRONMENT
+
+Run Python from a Graphical User Interface (GUI)
+
+Unix − IDLE is the very first Unix IDE for Python.
+
+Windows − PythonWin is the first Windows interface for Python and is an IDE with a GUI.
+
+Macintosh − The Macintosh version of Python along with the IDLE IDE is available from the main website, downloadable as either MacBinary or BinHex'd files.
+
+If error: set up the environment properly
+
+******************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
