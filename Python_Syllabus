@@ -1,17 +1,16 @@
-Python Overview
-  Overview 
+Basics Of Python:
+
+Python Introduction 
   History 
-  Features 
-  Python 2 Vs Python 3 
+  Overview
 
 Python Environment
-  Environment Setup 
-  From Command Line 
-  Script From Command Line 
-  Command Line Options 
-  Script As Executable 
-  IDLE Interactive Shell 
-
+  Installation
+  Environment Setups
+  Execute Scripts on multiple OS
+  IDLE Introduction
+  Commond Line Options
+  
 Python Basic Syntax
   Basic Syntax  
   Indentifiers 
