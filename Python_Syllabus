@@ -1,19 +1,17 @@
-Basics Of Python:
 
-Python Introduction 
+Core & Advanced Python:
+
+Week 1:
+
   History 
   Overview
-
-Python Environment
   Installation
   Environment Setups
   Execute Scripts on multiple OS
   IDLE Introduction
-  Commond Line Options
-  
-Python Basic Syntax
+  Command Line Options
   Basic Syntax  
-  Indentifiers 
+  Identifiers 
   Keywords 
   Lines & Indentation 
   Multiline Statements 
@@ -22,11 +20,10 @@ Python Basic Syntax
   User Input 
   Command Line Argument 
 
-Python Variables & Data Types
+Week 2:
+
   Variables 
   Standard Data Types 
-
-Python Numbers
   Numbers 
   Mathematical Functions 
   Random Number Function 
@@ -34,8 +31,6 @@ Python Numbers
   Mathematical Constants 
   Trigonometric Inverse Functions 
   Trigonometric Misc Functions 
-
-Python Basic Operators
   Basic Operators 
   Arithmetic Operators 
   Bitwise Operators 
@@ -44,7 +39,8 @@ Python Basic Operators
   Identity Operators 
   Operator Precedence 
 
-Python Strings
+Week 3:
+
   Strings 
   Escape Characters 
   String Basic Operators 
@@ -52,24 +48,21 @@ Python Strings
   Triple Quotes 
   String Boolean Function 
   String Encoding Functions 
-  Misc Functions 
-
-Python Lists
+  Misc Functions
   List 
   Access Update & Delete List 
   Basic List Operation 
   Indexing, Slicing & Matrixes 
   List Methods 
   Built-In List Functions  
-
-Python Decision Making
   Decision Making 
   If Statement 
   If Else Statement 
   If Elif Else Statement 
   Single Statement Suites 
 
-Python Loops
+Week 4:
+
   Loops 
   While Loop 
   Infinite While Loop 
@@ -84,11 +77,7 @@ Python Loops
   Continue Statement 
   Pass Statement 
   Using Else With For Loop 
-
-Python Date & Time
   Date & Time 
-
-Python Tuples
   Tuples 
   Update And Delete Tuples 
   Basic Tuple Operations 
@@ -96,14 +85,13 @@ Python Tuples
   Tuple No Enclosing Delimiters 
   Built-In Tuple Function 
 
-Python Dictionary
+Week 5:
+
   Dictionary 
   Update & Delete Dictionary 
   Properties Of Dictionary Keys 
   Built-In Dictionary Function 
   Dictionary Method 
-
-Python Functions
   Functions 
   Parameter Pass By Reference 
   Function Arguments 
@@ -115,7 +103,8 @@ Python Functions
   The Return Argument 
   Scope Of Variables 
 
-Python Modules
+Week 6:
+
   Modules 
   The Import Statement 
   From Import Statement 
@@ -124,8 +113,6 @@ Python Modules
   Namespace & Scoping 
   Reload() Function 
   Package 
-
-Python File I/O
   Printing To Screen 
   Reading Keyboard Input 
   Opening & Closing File 
@@ -134,8 +121,6 @@ Python File I/O
   Renaming & Deleting File 
   Directories 
   The OS.Open() Method 
-
-Python Exceptions
   Exceptions 
   Try… Except With Multiple Experssions 
   Try Finally Clause 
@@ -145,7 +130,8 @@ Python Exceptions
   User Defined Exceptions 
   Assertions 
 
-Python OOPs
+Week 7:
+
   Overview Of OOPs Terminology 
   Class & Object 
   Accessing Attributes 
@@ -154,8 +140,6 @@ Python OOPs
   Operator Overloading 
   Data Hiding 
   Garbage Collection 
-
-Python Regular Expressions
   Regular Expressions 
   Compilation Flags 
   Match Function 
@@ -163,8 +147,6 @@ Python Regular Expressions
   Match Vs Searching 
   Searching & Replace 
   Regular Expression Modifiers 
-
-Python CGI Programming
   CGI Programming 
   Web Server Configuration 
   First CGI Program 
@@ -177,7 +159,8 @@ Python CGI Programming
   Cookies 
   File Upload 
 
-Python Sockets
+Week 8:
+
   Network Programming 
   What Is Socket? 
   Socket Module 
@@ -187,8 +170,6 @@ Python Sockets
   Simple Server 
   Simple Client 
   Internet Modules 
-
-Python MySQL
   MySQL Database 
   PyMySQL 
   Database Connection 
@@ -200,20 +181,17 @@ Python MySQL
   Commit & Rollback Operation 
   Handling Errors 
 
-Python Email
+Week 9:
+
   Sending Email Using SMTP 
   Send Mail Function 
   Sending Attachment With Email 
   Sending Email With Gmail SMTP Server 
-
-Python Threading
   Multithreaded Programming 
   Starting A New Thread 
   Creating Thread 
   Synchronizing Threads 
   Multithreaded Priority Queue 
-
-Python XML
   XML Processing 
   XML Parsing Architecture & APIs 
   Parsing XML With SAX API 
@@ -222,7 +200,8 @@ Python XML
   ParseString Method 
   Parsing XML With DOM API 
 
-Python GUI Programming
+Week 10:
+
   GUI Programming 
   Geometry Management 
   Event Driven Programming 
@@ -235,3 +214,4 @@ Python GUI Programming
   Scale Widget 
   Scrollbar Widget 
   Message Box 
+
