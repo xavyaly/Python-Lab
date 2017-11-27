@@ -1,0 +1,14 @@
+Machine Learning With Python:
+
+
+  Numpy is package for multi dimension arrays – very effective implementation
+
+  Scipy – package for scientific programming , mathematics , signal processing and more
+
+  Pandas – package for data handling
+
+  Matplotlib – package for data visualization (graphs)
+
+  Seaborn – extend Matplotlib with statistical graphs
+
+  Scikits – many extensions to spicy for specific fields like x-ray, image processing , deep learning and many more
