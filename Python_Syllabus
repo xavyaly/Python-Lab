@@ -1,217 +1,155 @@
+Core Python
 
-Core & Advanced Python:
+Introduction
 
-Week 1:
+	History 
+	Features 
+	Setting up path 
+	Working with Python 
+	Basic Syntax 
+	Variable and Data Types 
+	Operator
 
-  History 
-  Overview
-  Installation
-  Environment Setups
-  Execute Scripts on multiple OS
-  IDLE Introduction
-  Command Line Options
-  Basic Syntax  
-  Identifiers 
-  Keywords 
-  Lines & Indentation 
-  Multiline Statements 
-  Quotations 
-  Comments 
-  User Input 
-  Command Line Argument 
+Conditional Statements
 
-Week 2:
+	If 
+	If- else 
+	Nested if-else
 
-  Variables 
-  Standard Data Types 
-  Numbers 
-  Mathematical Functions 
-  Random Number Function 
-  Trigonometric Functions 
-  Mathematical Constants 
-  Trigonometric Inverse Functions 
-  Trigonometric Misc Functions 
-  Basic Operators 
-  Arithmetic Operators 
-  Bitwise Operators 
-  Logical Operators 
-  Membership Operators 
-  Identity Operators 
-  Operator Precedence 
+Looping
 
-Week 3:
+	For 
+	While 
+	Nested loops
 
-  Strings 
-  Escape Characters 
-  String Basic Operators 
-  String Formatting Operators 
-  Triple Quotes 
-  String Boolean Function 
-  String Encoding Functions 
-  Misc Functions
-  List 
-  Access Update & Delete List 
-  Basic List Operation 
-  Indexing, Slicing & Matrixes 
-  List Methods 
-  Built-In List Functions  
-  Decision Making 
-  If Statement 
-  If Else Statement 
-  If Elif Else Statement 
-  Single Statement Suites 
+Control Statements
 
-Week 4:
+	Break 
+	Continue 
+	Pass
 
-  Loops 
-  While Loop 
-  Infinite While Loop 
-  While Loop Else Statement 
-  While Loop Single Statement Suites 
-  For Loop 
-  For Loop Using Rang() Function 
-  For Loop Iterating By Sequence Index 
-  Nested Loop 
-  Loop Control Statements 
-  Break Statement 
-  Continue Statement 
-  Pass Statement 
-  Using Else With For Loop 
-  Date & Time 
-  Tuples 
-  Update And Delete Tuples 
-  Basic Tuple Operations 
-  Indexing & Slicing Of Tuple 
-  Tuple No Enclosing Delimiters 
-  Built-In Tuple Function 
+String Manipulation
 
-Week 5:
+	Accessing Strings 
+	Basic Operations 
+	String slices 
+	Function and Methods
 
-  Dictionary 
-  Update & Delete Dictionary 
-  Properties Of Dictionary Keys 
-  Built-In Dictionary Function 
-  Dictionary Method 
-  Functions 
-  Parameter Pass By Reference 
-  Function Arguments 
-  Required Arguments 
-  Keyword Arguments 
-  Default Arguments 
-  Variable Length Arguments 
-  Anonymous Functions 
-  The Return Argument 
-  Scope Of Variables 
+Lists
 
-Week 6:
+	Introduction 
+	Accessing list 
+	Operations 
+	Working with lists 
+	Function and Methods
 
-  Modules 
-  The Import Statement 
-  From Import Statement 
-  Executing Module As Script 
-  Loading Module 
-  Namespace & Scoping 
-  Reload() Function 
-  Package 
-  Printing To Screen 
-  Reading Keyboard Input 
-  Opening & Closing File 
-  File Object Attributes 
-  OS Module Method 
-  Renaming & Deleting File 
-  Directories 
-  The OS.Open() Method 
-  Exceptions 
-  Try… Except With Multiple Experssions 
-  Try Finally Clause 
-  Argument Of Exception 
-  Raising An Exception 
-  Standard Exceptions 
-  User Defined Exceptions 
-  Assertions 
+Tuple
 
-Week 7:
+	Introduction 
+	Accessing tuples 
+	Operations 
+	Working 
+	Functions and Methods
 
-  Overview Of OOPs Terminology 
-  Class & Object 
-  Accessing Attributes 
-  Class Inheritance 
-  Overriding Methods 
-  Operator Overloading 
-  Data Hiding 
-  Garbage Collection 
-  Regular Expressions 
-  Compilation Flags 
-  Match Function 
-  Search Function 
-  Match Vs Searching 
-  Searching & Replace 
-  Regular Expression Modifiers 
-  CGI Programming 
-  Web Server Configuration 
-  First CGI Program 
-  HTTP Header 
-  CGI Environment Variables 
-  HTTP Methods 
-  GET Method 
-  Post Method 
-  Passing From Data To CGI Program 
-  Cookies 
-  File Upload 
+Dictionaries
 
-Week 8:
+	Introduction 	Accessing values in dictionaries 
+	Working with dictionaries 
+	Properties 
+	Functions
 
-  Network Programming 
-  What Is Socket? 
-  Socket Module 
-  Server Socket Method 
-  Client Socket Method 
-  General Socket Method 
-  Simple Server 
-  Simple Client 
-  Internet Modules 
-  MySQL Database 
-  PyMySQL 
-  Database Connection 
-  Create Database Table 
-  Insert Operation 
-  Read Operation 
-  Update Operations 
-  Performing Transactions 
-  Commit & Rollback Operation 
-  Handling Errors 
+Functions
 
-Week 9:
+	Defining a function 
+	Calling a function 
+	Types of functions 
+	Function Arguments 
+	Anonymous functions 
+	Global and local variables
 
-  Sending Email Using SMTP 
-  Send Mail Function 
-  Sending Attachment With Email 
-  Sending Email With Gmail SMTP Server 
-  Multithreaded Programming 
-  Starting A New Thread 
-  Creating Thread 
-  Synchronizing Threads 
-  Multithreaded Priority Queue 
-  XML Processing 
-  XML Parsing Architecture & APIs 
-  Parsing XML With SAX API 
-  The Make_parser Method 
-  The Parse Method 
-  ParseString Method 
-  Parsing XML With DOM API 
+Modules
 
-Week 10:
+	Importing module 
+	Math module 
+	Random module 
+	Packages 
+	Composition
 
-  GUI Programming 
-  Geometry Management 
-  Event Driven Programming 
-  Button Widget 
-  Label Widget 
-  Canvas Widget 
-  Check Button Widget 
-  Entry Widget 
-  Listbox Widget 
-  Scale Widget 
-  Scrollbar Widget 
-  Message Box 
+Input-Output
+
+	Printing on screen 
+	Reading data from keyboard 
+	Opening and closing file 
+	Reading and writing files 
+	Functions
+
+Exception Handling
+
+	Exception 
+	Exception Handling 
+	Except clause 
+	Try ? finally clause 
+	User Defined Exceptions
+
+
+Advance Python
+
+
+OOPs concept
+
+	Class and object 
+	Attributes 
+	Inheritance 
+	Overloading 
+	Overriding 
+	Data hiding 
+
+Regular expressions
+
+	Match function 
+	Search function 
+	Matching VS Searching 
+	Modifiers 
+	Patterns
+
+CGI
+
+	Introduction 
+	Architecture 
+	CGI environment variable 
+	GET and POST methods 
+	Cookies 
+	File upload
+
+Database
+
+	Introduction 
+	Connections 
+	Executing queries 
+	Transactions 
+	Handling error
+
+Networking
+
+	Socket 
+	Socket Module 
+	Methods 
+	Client and server 
+	Internet modules
+
+Multithreading
+
+	Thread 
+	Starting a thread 
+	Threading module 
+	Synchronizing threads 
+	Multithreaded Priority Queue
+
+GUI Programming
+
+	Introduction 
+	Tkinter programming 
+	Tkinter widgets 
+
+Sending email
 
