@@ -1,0 +1,66 @@
+LIST IN PYTHON
+
+# []: SQUARE BRACKET
+
+>>> li=[-20,20,2,'String',20.20]
+>>> print(li)
+[-20, 20, 2, 'String', 20.2]
+>>> 
+>>> print(li[0])
+-20
+>>> print(li[0:10])
+[-20, 20, 2, 'String', 20.2]
+>>> print(li[4])
+20.2
+>>> print(len(li))
+5
+>>> 
+>>> 
+>>> li.append('new-string')
+>>> print(li)
+[-20, 20, 2, 'String', 20.2, 'new-string']
+>>> li.remove('new-string')
+>>> print(li)
+[-20, 20, 2, 'String', 20.2]
+>>> li.append('new-string')
+>>> del(li[5])
+>>> print(li)
+[-20, 20, 2, 'String', 20.2]
+>>> 
+>>> li.insert(10)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: insert() takes exactly 2 arguments (1 given)
+>>> 
+>>> li.insert(2,10)
+>>> print(li)
+[-20, 20, 10, 2, 'String', 20.2]
+>>> 
+>>> li.insert(0,10)
+>>> print(li)
+[10, -20, 20, 10, 2, 'String', 20.2]
+>>> 
+>>> li.set()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'set'
+>>> 
+>>> li.sort()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '<' not supported between instances of 'str' and 'int'
+>>> 
+>>> li=[-20,20,2,20.20]
+>>> li.sort()
+>>> print(li)
+[-20, 2, 20, 20.2]
+>>> li.sort(reverse=True)
+>>> print(li)
+[20.2, 20, 2, -20]
+>>> 
+>>> print(max(li))
+20.2
+>>> print(min(li))
+-20
+>>> 
+
