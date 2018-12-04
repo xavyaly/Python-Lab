@@ -1,0 +1,73 @@
+// PRINT FUNCTIONS
+
+Int: I
+Float: f
+String: s
+
+>>> print("("*20)
+((((((((((((((((((((
+>>> 
+>>> name='Ali'
+>>> div=99.99
+>>> print('Name is ',name,'Division is ',div)
+Name is  Ali Division is  99.99
+>>> print('Name is',name,'Division is',div)
+Name is Ali Division is 99.99
+>>> 
+>>> print('Name is %s','Division is %f'%(name,div))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: must be real number, not str
+>>> 
+>>> print('Name is %s,Division is %f'%(name,div))
+Name is Ali,Division is 99.990000
+>>> 
+>>> print('Name is %s,Division is %.3f'%(name,div))
+Name is Ali,Division is 99.990
+>>> print('Name is %s,Division is %.2f'%(name,div))
+Name is Ali,Division is 99.99
+>>> 
+>>> print('Name is {}, Division is {}'.format(name,div))
+Name is Ali, Division is 99.99
+>>> 
+>>> print('Name is {0}, Division is {1}'.format(name,div))
+Name is Ali, Division is 99.99
+>>> 
+
+
+// SINGLE INPUTS FUNCTIONS
+
+>>> s=str(input("Enter ur name :"))
+Enter ur name :ali
+>>> print(s)
+ali
+>>> 
+>>> print(type(s))
+<class 'str'>
+>>> 
+>>> s=str(input("Enter ur name :"))
+Enter ur name :12
+>>> print(s)
+12
+>>> print(type(s))
+<class 'str'>
+>>> 
+>>> s=int(input("Enter ur name :"))
+Enter ur name :ali
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'ali'
+>>> 
+>>> s=int(input("Enter ur name :"))
+Enter ur name :12
+>>> print(type(s))
+<class 'int'>
+
+// MULTIPLE INPUT FUNCTIONS
+
+>>> lst=[i for i in input("Enter 4 inputs from the keyboard: ").split(" ")]
+Enter 4 inputs from the keyboard: 1 2 3 4
+>>> print(lst)
+['1', '2', '3', '4']
+>>> 
+>>> 

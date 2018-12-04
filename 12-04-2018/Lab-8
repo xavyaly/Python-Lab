@@ -1,0 +1,52 @@
+// SETS IN PYTHON: { }
+// REMOVES THE DUPLICATES
+// SETS DOESN’T SUPPORT REPETITION, SLICING AND INDEXING
+
+>>> s={10,20,30,30,30,'String'}
+>>> print(s)
+{10, 20, 'String', 30}
+>>> 
+>>> print(type(s))
+<class 'set'>
+>>> 
+>>> s.update(100)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not iterable
+>>> 
+>>> s.remove(10)
+>>> print(s)
+{20, 'String', 30}
+>>> 
+>>> s.remove(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 0
+>>> 
+>>> print(s)
+{20, 'String', 30}
+>>> 
+>>> print(s)
+{20, 'String', 30}
+>>> 
+>>> s.update([100,200])
+>>> print(s)
+{100, 200, 'String', 20, 30}
+>>> 
+>>> f=frozenset(s)
+>>> f.update([1000])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'frozenset' object has no attribute 'update'
+>>> 
+>>> print(s)
+{100, 200, 'String', 20, 30}
+>>> print(f)
+frozenset({'String', 100, 20, 200, 30})
+>>> 
+>>> f.remove(100)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'frozenset' object has no attribute 'remove'
+>>> 
+>>> 
