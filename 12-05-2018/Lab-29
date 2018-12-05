@@ -1,0 +1,23 @@
+// CONTROL STATEMENTS
+
+LOOP CONTROL:
+	PASS: The pass statement does nothing. It can be used when a statement is required syntactically but the program requires no action.
+
+
+cat test1.py 
+#!/usr/bin/python
+
+string='India'
+for i in string:
+	if i=='d':
+		pass
+	print('Current letter is: ',i)
+
+O/P:
+
+./test1.py 
+('Current letter is: ', 'I')
+('Current letter is: ', 'n')
+('Current letter is: ', 'd')
+('Current letter is: ', 'i')
+('Current letter is: ', 'a')

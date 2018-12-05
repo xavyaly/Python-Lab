@@ -1,0 +1,11 @@
+// CONTROL STATEMENTS
+
+CONDITIONAL STATEMENTS:
+	IF..ELIF…ELSE
+
+#!/usr/bin/python
+
+ui=int(input("Enter any integer no: "))
+if ui==0:print(ui,"Neither even nor odd no....")
+elif ui%2==0:print("Even no..")
+else:print("Odd no..")

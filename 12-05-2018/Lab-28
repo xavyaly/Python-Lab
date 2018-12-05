@@ -1,0 +1,50 @@
+// CONTROL STATEMENTS
+
+LOOP CONTROL:
+	CONTINUE: 
+
+
+cat test.py 
+#!/usr/bin/python
+
+string='India'
+for i in string:
+	if i=='d':
+		continue
+	print('Current letter is: ',i)
+
+O/P:
+
+./test.py 
+('Current letter is: ', 'I')
+('Current letter is: ', 'n')
+('Current letter is: ', 'i')
+('Current letter is: ', 'a')
+
+OR:
+
+// NEED TO CHECK WHY IT’S NOT WORKING
+
+#!/usr/bin/python
+
+int=10
+while int>0:
+	print('Current int values is: ',int)
+	int=int-1
+	if int == 5:
+		continue
+print('Leave the executions!!')
+
+O/P:
+
+('Current int values is: ', 10)
+('Current int values is: ', 9)
+('Current int values is: ', 8)
+('Current int values is: ', 7)
+('Current int values is: ', 6)
+('Current int values is: ', 5)
+('Current int values is: ', 4)
+('Current int values is: ', 3)
+('Current int values is: ', 2)
+('Current int values is: ', 1)
+Leave the executions!!

@@ -1,0 +1,52 @@
+// CONTROL STATEMENTS
+
+LOOP CONTROL:
+	RETURN:
+
+cat test1.py 
+#!/usr/bin/python
+
+# initializing the function
+
+def foo():
+	print('Calling from inside of foo!!!')
+	return 1
+
+if __name__ == '__main__':
+	print('Going to call foo..')
+	i = foo()
+	print('Called foo..')
+	print('foo returned: '+ str(i))
+
+O/P:
+
+./test1.py 
+Going to call foo..
+Calling from inside of foo!!!
+Called foo..
+foo returned: 1
+
+OR:
+
+cat test1.py 
+#!/usr/bin/python
+
+# initializing the function
+
+def foo():
+	print('Calling from inside of foo!!!')
+	return 0
+
+if __name__ == '__main__':
+	print('Going to call foo..')
+	i = foo()
+	print('Called foo..')
+	print('foo returned: '+ str(i))
+
+O/P:
+
+./test1.py 
+Going to call foo..
+Calling from inside of foo!!!
+Called foo..
+foo returned: 0

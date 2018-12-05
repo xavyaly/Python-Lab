@@ -1,0 +1,70 @@
+// CONTROL STATEMENTS
+
+LOOP CONTROL:
+	BREAK: BREAKS THE LOOP
+
+cat test.py 
+#!/usr/bin/python
+
+string='India'
+for i in string:
+	if i=='d':
+		break
+	print('Current letter is: ',i)
+
+O/P:
+
+./test.py 
+('Current letter is: ', 'I')
+('Current letter is: ', 'n')
+
+OR
+
+cat test.py 
+#!/usr/bin/python
+
+int=20
+while int>0:
+	print('Current int values is: ',int)
+	int=int-1
+	if int==5:
+		break
+print('Leave the executions!!')
+
+O/P:
+
+ ./test.py 
+('Current int values is: ', 20)
+('Current int values is: ', 18)
+('Current int values is: ', 16)
+('Current int values is: ', 14)
+('Current int values is: ', 12)
+('Current int values is: ', 10)
+('Current int values is: ', 8)
+('Current int values is: ', 6)
+('Current int values is: ', 4)
+('Current int values is: ', 2)
+Leave the executions!!
+
+OR:
+
+$ cat test.py 
+#!/usr/bin/python
+
+int=20
+while int>0:
+	print('Current int values is: ',int)
+	int=int-3
+	if int==5:
+		break
+print('Leave the executions!!')
+
+O/P:
+
+$ ./test.py 
+('Current int values is: ', 20)
+('Current int values is: ', 17)
+('Current int values is: ', 14)
+('Current int values is: ', 11)
+('Current int values is: ', 8)
+Leave the executions!!

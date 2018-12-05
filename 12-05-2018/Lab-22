@@ -1,0 +1,13 @@
+// CONTROL STATEMENTS
+
+CONDITIONAL STATEMENTS:
+	IF
+
+>>> a=10
+>>> if a:
+...     print("Printing the variable value")
+...     print(a)
+... 
+Printing the variable value
+10
+

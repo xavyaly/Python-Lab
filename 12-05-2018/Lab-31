@@ -1,0 +1,24 @@
+// CONTROL STATEMENTS
+
+LOOP CONTROL:
+	ASSERT:
+
+cat test1.py 
+#!/usr/bin/python
+
+i = int(input('Enter a no smaller than 10: '))
+assert i<10, "Entered by user is wrong!!! Please try different no.."
+print("Entered by user is: ", i)
+
+O/P:
+
+./test1.py 
+Enter a no smaller than 10: 2
+('Entered by user is: ', 2)
+
+./test1.py 
+Enter a no smaller than 10: 11
+Traceback (most recent call last):
+  File "./test1.py", line 4, in <module>
+    assert i<10, "Entered by user is wrong!!! Please try different no.."
+AssertionError: Entered by user is wrong!!! Please try different no..
