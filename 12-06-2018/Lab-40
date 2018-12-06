@@ -1,0 +1,35 @@
+FUNCTION ARGUMENTS:
+	VARIABLE-LENGTH ARGUMENTS
+
+// an asterisk(*) is placed before the variable name that holds the values of all non keyword variable arguments
+// This will remains empty if no additional arguments are specified during the function call.
+
+cat test.py 
+#!/usr/bin/python
+
+# INITIALIZE THE FUNCTION
+
+def function_name(arg, *vararg):
+	"The changes a passed list into this function.. "
+	print("The Output will be:  ")
+	print(arg)
+	
+	for var in vararg:
+		print(var)
+	return; 
+
+# CALL THE function_name
+
+function_name(10)
+function_name(78,34,12,23)
+
+O/P:
+
+./test.py 
+The Output will be:  
+10
+The Output will be:  
+78
+34
+12
+23

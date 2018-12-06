@@ -1,0 +1,29 @@
+FUNCTION ARGUMENTS:
+	REQUIRED ARGUMENTS
+
+// Number of arguments in the function call should match exactly with the function definition
+// you need to pass exactly one argument else it will give a syntax error
+
+cat test.py 
+#!/usr/bin/python
+
+# INITIALIZE THE FUNCTION
+
+def function_name(myList):
+	"The changes a passed list into this function.. "
+	print("Print the parameter passed: ", myList)
+	return 
+
+# CALL THE function_name
+
+function_name();
+
+O/P:
+
+Error:
+
+./test.py 
+Traceback (most recent call last):
+  File "./test.py", line 12, in <module>
+    function_name();
+TypeError: function_name() takes exactly 1 argument (0 given)

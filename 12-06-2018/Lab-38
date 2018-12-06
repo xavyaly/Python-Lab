@@ -1,0 +1,25 @@
+FUNCTION ARGUMENTS:
+	KEYWORD ARGUMENTS
+
+// order of parameters does not matter.
+
+cat test.py 
+#!/usr/bin/python
+
+# INITIALIZE THE FUNCTION
+
+def function_name(name, age):
+	"The changes a passed list into this function.. "
+	print("Passed the name as: ", name)
+	print("Passed the age of man as: ", age)
+	return 
+
+# CALL THE function_name
+
+function_name(age=35, name="Ali");
+
+O/P:
+
+./test.py 
+('Passed the name as: ', 'Ali')
+('Passed the age of man as: ', 35)

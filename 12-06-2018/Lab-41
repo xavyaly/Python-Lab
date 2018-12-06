@@ -1,0 +1,23 @@
+// ANONYMOUS FUNCTION:
+
+Syntax:
+	
+	lambda [arg1 [,arg2,….argn]]: expression
+
+cat test.py 
+#!/usr/bin/python
+
+# FUNCTION DEF 
+
+sum = lambda arg1,arg2:arg1 * arg2;
+
+# CALL THE "sum" FUNCTION
+
+print("Value of total: ", sum(10,20))
+print("value of total: ", sum(100,200))
+
+O/P:
+
+./test.py 
+('Value of total: ', 200)
+('value of total: ', 20000)
