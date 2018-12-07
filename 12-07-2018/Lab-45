@@ -1,0 +1,4 @@
+// MODULES: A pkg
+
+>>> import os
+>>> dir(os)

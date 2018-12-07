@@ -1,0 +1,13 @@
+#!/usr/bin/python
+
+// THE BEST WAY TO OPEN A FILE IS “with” STATEMENT
+// BECAUSE THIS ENSURES THAT FILE IS CLOSED WHEN THE BLOCK INSIDE ‘with’ IS EXITED
+// WE DON’T NEED TO EXPLICITLY CALL THE “close()” METHOD.
+// IT’S DONE INTERNALLY
+
+# FOR LINUX USERS
+with open("/Users/javedalam/Documents/MyGit/Python/12-07-2018/<file-name>.txt",mode='rw+',encoding='utf-8') as f:
+
+
+with open("/Users/javedalam/Documents/MyGit/Python/12-07-2018/<file-name>.txt",mode='rw+') as f:
+	

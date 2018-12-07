@@ -1,0 +1,12 @@
+// READ A SINGLE LINE OF A FILE:
+
+>>> f = open("/Users/javedalam/Documents/MyGit/Python/12-07-2018/new-file.txt",mode='r')
+>>> f.readline()
+'My first line\n'
+>>> f.readline()
+'This is the second line\n'
+>>> f.readline()
+'\n'
+>>> f.readline()
+'This is the third line\n'
+>>> 

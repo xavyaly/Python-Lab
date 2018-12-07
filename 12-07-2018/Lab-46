@@ -1,0 +1,19 @@
+// CREATE A MODULE
+
+cat mymodule.py 
+#!/usr/bin/python
+
+def greeting(name):
+	print("Hello " + name )
+
+cat myimport.py 
+#!/usr/bin/python
+
+import mymodule
+
+mymodule.greeting("Ali")
+
+O/P:
+
+./myimport.py 
+Hello Ali

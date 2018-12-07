@@ -1,0 +1,26 @@
+// USE OF FOR LOOP WHILE READING THE FILE:
+
+>>> f = open("/Users/javedalam/Documents/MyGit/Python/12-07-2018/new-file.txt",mode='r')
+>>> for line in f:
+...     print(line, end = ' ')
+... 
+My first line
+ This is the second line
+ 
+ This is the third line
+ >>> 
+>>> for line in f:
+...     print(line)
+... 
+>>> f = open("/Users/javedalam/Documents/MyGit/Python/12-07-2018/new-file.txt",mode='r')
+>>> for line in f:
+...     print(line)
+... 
+My first line
+
+This is the second line
+
+
+
+This is the third line
+

@@ -1,0 +1,33 @@
+// READ THE FILE IN DIFFERENT WAYS:
+
+>>> f = open("/Users/javedalam/Documents/MyGit/Python/12-07-2018/new-file.txt",mode='r')
+>>> f.open(4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: '_io.TextIOWrapper' object has no attribute 'open'
+>>> f.read(4)
+'My f'
+>>> 
+>>> f.read(10)
+'irst line\n'
+>>> f.read()
+'This is the second line\n\nThis is the third line\n'
+>>> 
+>>> f = open("/Users/javedalam/Documents/MyGit/Python/12-07-2018/new-file.txt",mode='r')
+>>> f.read()
+'My first line\nThis is the second line\n\nThis is the third line\n'
+>>> 
+>>> f.read(100)
+''
+>>> 
+>>> f = open("/Users/javedalam/Documents/MyGit/Python/12-07-2018/new-file.txt",mode='r')
+>>> f.read(100)
+'My first line\nThis is the second line\n\nThis is the third line\n'
+>>> 
+>>> f = open("/Users/javedalam/Documents/MyGit/Python/12-07-2018/new-file.txt",mode='r')
+>>> f.read(0)
+''
+>>> 
+>>> f.read(10)
+'My first l'
+>>> 
