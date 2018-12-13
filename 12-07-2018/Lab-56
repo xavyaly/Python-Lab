@@ -1,6 +1,0 @@
-// READ ALL LINE PRESENT INSIDE A FILE:
-
->>> f = open("/Users/javedalam/Documents/MyGit/Python/12-07-2018/new-file.txt",mode='r')
->>> f.readlines()
-['My first line\n', 'This is the second line\n', '\n', 'This is the third line\n']
->>>
