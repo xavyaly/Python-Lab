@@ -1,0 +1,31 @@
+>>> x=2.0
+>>> x
+2.0
+>>> print(type(x))
+<class 'float'>
+>>> tc=int(x)
+>>> print(type(tc))
+<class 'int'>
+>>> 
+>>> cb=bin(20)
+>>> print(type(cb))
+<class 'str'>
+>>> 
+>>> print(cb)
+0b10100
+>>> 
+>>> 
+>>> co=oct(10)
+>>> print(type(co))
+<class 'str'>
+>>> 
+>>> print(co)
+0o12
+>>> 
+>>> ch=hex(10)
+>>> print(type(ch))
+<class 'str'>
+>>> 
+>>> print(ch)
+0xa
+>>> 
