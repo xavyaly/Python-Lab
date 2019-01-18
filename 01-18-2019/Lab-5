@@ -1,0 +1,103 @@
+// CONTROL STATEMENTS:
+
+LOOPING:
+	FOR: ITERATE OVER THE ITEMS OF ANY SEQUENCE SUCH AS A LIST OR A STRING
+
+SYNTAX:
+	FOR ITERATING_VAR IN SEQUENCE:
+		STATEMENTS(S)
+
+FOR LOOP:
+
+$ cat test1.py 
+#!/usr/bin/python
+
+for i in range(1,20,3):
+	print(i)
+
+O/P:
+
+$ ./test1.py 
+1
+4
+7
+10
+13
+16
+19
+
+OR
+
+$ cat test2.py 
+#!/usr/bin/python
+
+a='INDIA'
+for i in a:
+	print("Current Letter: ",i)
+
+O/P:
+
+$ ./test2.py 
+('Current Letter: ', 'I')
+('Current Letter: ', 'N')
+('Current Letter: ', 'D')
+('Current Letter: ', 'I')
+('Current Letter: ', 'A')
+
+OR
+
+$ cat test2.py 
+#!/usr/bin/python
+
+#a='INDIA'
+for i in 'INDIA':
+	print("Current Letter: ",i)
+
+O/P:
+
+$ ./test2.py 
+('Current Letter: ', 'I')
+('Current Letter: ', 'N')
+('Current Letter: ', 'D')
+('Current Letter: ', 'I')
+('Current Letter: ', 'A')
+
+OR
+
+$ cat test2.py 
+#!/usr/bin/python
+
+# iterating list of countries
+
+countries=['India','SriLanka','USA','Pakistan','China']
+
+for i in countries:print('Current countries: ',i)
+
+O/P:
+
+$ ./test2.py 
+('Current countries: ', 'India')
+('Current countries: ', 'SriLanka')
+('Current countries: ', 'USA')
+('Current countries: ', 'Pakistan')
+('Current countries: ', 'China')
+
+OR
+
+$ cat test2.py 
+#!/usr/bin/python
+
+# iterating list of countries
+
+countries=['India','SriLanka','USA','Pakistan','China']
+
+for index in range(len(countries)):print('Current countries: ',countries[index])
+
+O/P:
+
+$ ./test2.py 
+('Current countries: ', 'India')
+('Current countries: ', 'SriLanka')
+('Current countries: ', 'USA')
+('Current countries: ', 'Pakistan')
+('Current countries: ', 'China')

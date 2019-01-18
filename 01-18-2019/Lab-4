@@ -1,0 +1,24 @@
+IF..ELIF..ELSE
+
+$ cat test.py 
+#!/usr/bin/python
+
+ui=int(input("Enter any integer no: "))
+if ui==0:print("Neither even nor odd...")
+elif ui%2==0:print("Even No")
+else:print("Odd No")
+
+Executions:
+
+$ ./test.py 
+Enter any integer no: 10
+Even No
+
+$ ./test.py 
+Enter any integer no: 13
+Odd No
+
+$ ./test.py 
+Enter any integer no: 0
+Neither even nor odd...
+
