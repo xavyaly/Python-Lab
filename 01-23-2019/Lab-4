@@ -1,0 +1,64 @@
+FUNCTION ARGUMENTS:
+	KEYWORD ARGUMETS
+
+$ cat test3.py 
+#!/usr/bin/python
+
+#INITIALIZE THE FUNCTION
+
+def function_name(myList):
+	"The cahnges a passed list into this function..."
+	print("Print the parameter passed:", myList)
+	return
+
+#CALLING THE FUNCTION
+function_name(myList="My New String");
+
+O/P:
+
+$ ./test3.py 
+('Print the parameter passed:', 'My New String')
+
+OR
+
+$ cat test3.py 
+#!/usr/bin/python
+
+#INITIALIZE THE FUNCTION
+
+def function_name(name,age):
+	"The cahnges a passed list into this function..."
+	print("Print the name as: ", name)
+	print("Print the age of man as: ", age)
+	return
+
+#CALLING THE FUNCTION
+function_name(name="Ali",age=23);
+
+$ ./test3.py 
+('Print the name as: ', 'Ali')
+('Print the age of man as: ', 23)
+
+OR
+
+$ cat test3.py 
+#!/usr/bin/python
+
+#INITIALIZE THE FUNCTION
+
+def function_name(name,age):
+	"The cahnges a passed list into this function..."
+	print("Print the name as: ", name)
+	print("Print the age of man as: ", age)
+	return
+
+#CALLING THE FUNCTION
+function_name(age=23,name='Ali');
+
+O/P:
+
+$ ./test3.py 
+('Print the name as: ', 'Ali')
+('Print the age of man as: ', 23)
+
+
