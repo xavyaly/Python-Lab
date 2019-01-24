@@ -1,0 +1,20 @@
+// READ THE WHOLE CONTENT OF A FILE
+
+>>> f=open('/Users/javedalam/Documents/MyGit/Python/01-24-2019/new-file',mode='r')
+>>> f.readline()
+'My First Line\n'
+>>> f.readline()
+'My Second Line\n'
+>>> f.readline()
+'\n'
+>>> f.readline()
+'This is my third line\n'
+>>> 
+>>> f.readline()
+''
+>>> f.seek(0)
+0
+>>> f.readlines()
+['My First Line\n', 'My Second Line\n', '\n', 'This is my third line\n']
+>>> 
+

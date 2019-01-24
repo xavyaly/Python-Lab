@@ -1,0 +1,21 @@
+// USE OF TRY AND EXCEPT:
+
+>>> try:
+...     print(x)
+... except NameError:
+...     print('Variable x is not defined in Line 2002')
+... except:
+...     print('Something went wrong in other lines...')
+... 
+Variable x is not defined in Line 2002
+>>> 
+>>> x=2
+>>> try:
+...     print(x)
+... except NameError:
+...     print('Variable x is not defined in Line 2002')
+... except:
+...     print('Something went wrong in other lines...')
+... 
+2
+

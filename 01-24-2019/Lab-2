@@ -1,0 +1,15 @@
+#!/usr/bin/python
+
+#OPEN A FILE IN READ AND 'file-name' SHOULD EXIST
+f=open("/Users/javedalam/Documents/MyGit/Python/01-24-2019/<file-name>")
+
+#OPEN A FILE IN WRITE MODE
+f=open('/Users/javedalam/Documents/MyGit/Python/01-24-2019/<file-name>',mode='w')
+
+#OPEN FILE
+#DEFAULT ENCODING IS PLATFORM INDEPENDENT
+f=open('/Users/javedalam/Documents/MyGit/Python/01-24-2019/<file-name>',mode='w',encoding='utf-8')
+
+#OPEN A FILE WITH CERTAIN OPERATION AND CLOSE THE FILE
+f=open('/Users/javedalam/Documents/MyGit/Python/01-24-2019/<file-name>',mode='rw+')
+f.close()
