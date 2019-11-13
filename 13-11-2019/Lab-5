@@ -1,0 +1,93 @@
+# SLICING
+
+From Front: 0 1 2 3 4 5 ….
+From Back: …. -5 -4 -3 -2 -1 
+
+>>> str
+'I am a Sincere Man!!!'
+>>> 
+>>> print(str[0:20])
+I am a Sincere Man!!
+>>> 
+>>> print(str[0:21])
+I am a Sincere Man!!!
+>>> 
+>>> print(str[0:10])
+I am a Sin
+>>> 
+>>> print(str[:])
+I am a Sincere Man!!!
+>>> 
+>>> print(str[2:5])
+am 
+>>> 
+>>> print(str[1:])
+ am a Sincere Man!!!
+>>> 
+>>> 
+>>> 
+>>> print(str[-1:])
+!
+>>> 
+>>> str
+'I am a Sincere Man!!!'
+>>> 
+>>> print(str[-1:-2])
+
+>>> 
+>>> print(str[-1:-3])
+
+>>> 
+>>> print(str[-1:-10])
+
+>>> 
+>>> print(str[-2:])
+!!
+>>> 
+>>> print(str[-10:])
+ere Man!!!
+>>> 
+>>> 
+>>> str
+'I am a Sincere Man!!!'
+>>> 
+>>> print(str[0:20])
+I am a Sincere Man!!
+>>> 
+>>> print(str[0:20:2])
+Ia  icr a!
+>>> 
+>>> print(str[0:20:3])
+Im nrM!
+>>> 
+>>> print(str[0:20:-1])
+
+>>> 
+>>> print(str[-10:-1:2])
+eeMn!
+>>> 
+>>> st
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'st' is not defined
+>>> str
+'I am a Sincere Man!!!'
+>>> 
+>>> STR
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'STR' is not defined
+>>> 
+>>> str
+'I am a Sincere Man!!!'
+>>> 
+>>> print(str[::-1])
+!!!naM erecniS a ma I
+>>> 
+>>> print(str[::])
+I am a Sincere Man!!!
+>>> 
+>>> print(str[-1:20:2])
+
+>>> 
+

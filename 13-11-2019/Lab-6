@@ -1,0 +1,57 @@
+Multiple Functions:
+
+>>> str=" I am Sincere Man "
+>>> str
+' I am Sincere Man '
+>>> 
+>>> print(str)
+ I am Sincere Man 
+>>> 
+>>> print(str.lstrip())
+I am Sincere Man 
+>>> 
+>>> print(str.rstrip())
+ I am Sincere Man
+>>> 
+>>> print(str.strip())
+I am Sincere Man
+>>> 
+
+>>> str
+' I am Sincere Man '
+>>> 
+>>> print(str.find('Man'))
+14
+>>> 
+>>> print(str.find(''))
+0
+>>> 
+>>> print(str.find('am'),0,len(str))
+3 0 18
+>>> 
+>>> print(str.count('a'))
+2
+>>> 
+>>> print(str.count('am'))
+1
+>>> 
+>>> print(str.count(''))
+19
+>>> print(str.count(' '))
+5
+>>> 
+>>> print(str.replace('am','you'))
+ I you Sincere Man 
+>>> 
+>>> print(str.upper())
+ I AM SINCERE MAN 
+>>> 
+>>> print(str.lower())
+ i am sincere man 
+>>> 
+>>> print(str.title())
+ I Am Sincere Man 
+>>> 
+>>> print(str.capitalize())
+ i am sincere man 
+
