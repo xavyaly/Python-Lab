@@ -1,0 +1,174 @@
+Lists in Python:
+
+# [ ]: SQUARE BRACKET
+# MUTABLE
+
+$ python3.6
+Python 3.6.3 |Anaconda, Inc.| (default, Oct  6 2017, 12:04:38) 
+[GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> 
+>>> 
+>>> li=[-20,20,2,'String',20,20]
+>>> li
+[-20, 20, 2, 'String', 20, 20]
+>>> print(li)
+[-20, 20, 2, 'String', 20, 20]
+>>> print(li[0])
+-20
+>>> print(li[3])
+String
+>>> print(li[0:10])
+[-20, 20, 2, 'String', 20, 20]
+>>> 
+>>> print(len(li))
+6
+>>> print(append('New-String-Appended'))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'append' is not defined
+>>> 
+>>> 
+>>> li.append('New-String-Appended')
+>>> li
+[-20, 20, 2, 'String', 20, 20, 'New-String-Appended']
+>>> 
+>>> li.remove('New-String-Appended')
+>>> li
+[-20, 20, 2, 'String', 20, 20]
+>>> 
+>>> li.append('New-String-Appended')
+>>> li
+[-20, 20, 2, 'String', 20, 20, 'New-String-Appended']
+>>> li.remove(6)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+>>> 
+>>> li.remove('20')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+>>> 
+>>> li.remove(20)
+>>> li
+[-20, 2, 'String', 20, 20, 'New-String-Appended']
+>>> 
+>>> li.remove[20]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>> 
+>>> li
+[-20, 2, 'String', 20, 20, 'New-String-Appended']
+>>> 
+>>> li.remove[6]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>> 
+>>> li
+[-20, 2, 'String', 20, 20, 'New-String-Appended']
+>>> 
+>>> 
+>>> li.append(20)
+>>> li
+[-20, 2, 'String', 20, 20, 'New-String-Appended', 20]
+>>> 
+>>> 
+>>> del(li[5])
+>>> 
+>>> li
+[-20, 2, 'String', 20, 20, 20]
+>>> 
+>>> 
+>>> li.insert(10)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: insert() takes exactly 2 arguments (1 given)
+>>> 
+>>> li.insert(2,10)
+>>> li
+[-20, 2, 10, 'String', 20, 20, 20]
+>>> 
+>>> 
+>>> li.insert(0,'New-String-At-Zeroth')
+>>> li
+['New-String-At-Zeroth', -20, 2, 10, 'String', 20, 20, 20]
+>>> 
+>>> set(li)
+{'String', 2, 'New-String-At-Zeroth', 10, -20, 20}
+>>> 
+>>> sort(li)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sort' is not defined
+>>> 
+>>> li.sort()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '<' not supported between instances of 'int' and 'str'
+>>> 
+>>> type(li)
+<class 'list'>
+>>> 
+>>> li
+['New-String-At-Zeroth', -20, 2, 10, 'String', 20, 20, 20]
+>>> 
+>>> li.sort()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '<' not supported between instances of 'int' and 'str'
+>>> 
+>>> sort(li)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sort' is not defined
+>>> 
+>>> 
+>>> li
+['New-String-At-Zeroth', -20, 2, 10, 'String', 20, 20, 20]
+>>> 
+>>> 
+>>> li.sort(reverse=True)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '<' not supported between instances of 'str' and 'int'
+>>> 
+
+$ python2.7
+Python 2.7.10 (default, Feb 22 2019, 21:55:15) 
+[GCC 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.37.14)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> li=['New-String-At-Zeroth', -20, 2, 10, 'String', 20, 20, 20]
+>>> li
+['New-String-At-Zeroth', -20, 2, 10, 'String', 20, 20, 20]
+>>> 
+>>> 
+>>> li.sort(reverse=True)
+>>> li
+['String', 'New-String-At-Zeroth', 20, 20, 20, 10, 2, -20]
+>>> 
+>>> li
+['String', 'New-String-At-Zeroth', 20, 20, 20, 10, 2, -20]
+>>> 
+>>> li.sort(reverse=False)
+>>> li
+[-20, 2, 10, 20, 20, 20, 'New-String-At-Zeroth', 'String']
+>>> 
+>>> print(max(li))
+String
+>>> 
+>>> li.remove('String')
+>>> li.remove('New-String-At-Zeroth')
+>>> 
+>>> li
+[-20, 2, 10, 20, 20, 20]
+>>> 
+>>> print(max(li))
+20
+>>> print(min(li))
+-20
+>>>

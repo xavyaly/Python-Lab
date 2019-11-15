@@ -1,0 +1,56 @@
+Tuples in Python:
+
+# ( ): Parentheses 
+# IMMUTABLE
+
+CAN’T BE MODIFIED:
+	append()
+	extend()
+	insert()
+	remove()
+	clear()
+
+>>> tup1=(34)
+>>> tup1
+34
+>>> print(tup1)
+34
+>>> 
+>>> print(type(tup1))
+<class 'int'>
+>>> 
+>>> tup2=(20,22,33,'String')
+>>> tup2.insert(0,21)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'insert'
+>>> 
+>>> print(tup2*3)
+(20, 22, 33, 'String', 20, 22, 33, 'String', 20, 22, 33, 'String')
+>>> 
+>>> tup2
+(20, 22, 33, 'String')
+>>> 
+>>> tup2.count()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: count() takes exactly one argument (0 given)
+>>> 
+>>> print(tup2.count())
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: count() takes exactly one argument (0 given)
+>>> 
+>>> tup2
+(20, 22, 33, 'String')
+>>> 
+>>> tup2.count(20)
+1
+>>> 
+>>> tup2.index(20)
+0
+>>> 
+>>> tup2.index(22)
+1
+>>>
+
