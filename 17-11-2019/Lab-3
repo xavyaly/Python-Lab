@@ -1,0 +1,68 @@
+# Data Type declaration is not required in Python
+
+# int I = 10
+# Float f = 20.20
+# String s = “Deepak”
+
+# How to print the statements in Python:
+
+>>> name='Ali'
+>>> div=99.99
+>>> 
+>>> print('Name is',name,'Division is',div)
+Name is Ali Division is 99.99
+>>> 
+>>> print('Name is %s','Division is %f')
+Name is %s Division is %f
+>>> 
+>>> print('Name is %s, Division is %f')
+Name is %s, Division is %f
+>>> 
+>>> print('Name is %s, Division is %f',(name,div))
+Name is %s, Division is %f ('Ali', 99.99)
+>>> 
+>>> print('Name is %s, Division is %f',%(name,div))
+  File "<stdin>", line 1
+    print('Name is %s, Division is %f',%(name,div))
+                                       ^
+SyntaxError: invalid syntax
+>>> 
+>>> print('Name is %s, Division is %f'%(name,div))
+Name is Ali, Division is 99.990000
+>>> 
+>>> print('Name is',name,'Division is',div)
+Name is Ali Division is 99.99
+>>> 
+>>> print('Name is %s, Division is %f'%.2f(name,div))
+  File "<stdin>", line 1
+    print('Name is %s, Division is %f'%.2f(name,div))
+                                         ^
+SyntaxError: invalid syntax
+>>> print('Name is %s, Division is %.2f'%f(name,div))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'f' is not defined
+>>> 
+>>> 
+>>> print('Name is %s, Division is %.2f'%(name,div))
+Name is Ali, Division is 99.99
+>>> 
+>>> print('Name is %s, Division is %.1f'%(name,div))
+Name is Ali, Division is 100.0
+>>> 
+>>> div=99.9999
+>>> print('Name is %s, Division is %.2f'%(name,div))
+Name is Ali, Division is 100.00
+>>> 
+>>> div=23.2456
+>>> print('Name is %s, Division is %.2f'%(name,div))
+Name is Ali, Division is 23.25
+>>> 
+>>> print('Name is {}, Division is {}'.format(name,div))
+Name is Ali, Division is 23.2456
+>>> 
+>>> print('Name is {0}, Division is {1}'.format(name,div))
+Name is Ali, Division is 23.2456
+>>> 
+>>> print('Name is {1}, Division is {0}'.format(name,div))
+Name is 23.2456, Division is Ali
