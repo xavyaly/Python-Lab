@@ -1,0 +1,276 @@
+# Python
+
+Install Python:
+
+# Debian/Ubuntu/Mint
+# Python 2
+$ sudo apt-get install update
+$ sudo apt-get install python
+
+# Python 3
+$ sudo apt-get install update
+$ sudo apt-get install python3
+
+# Fedora
+# Python 2
+$ dnf install python
+# Python 3
+$ dnf install python3 
+
+# CentOS
+# Python 2
+$ yum install python
+# Python 3
+Will add a link
+$ yum install python3
+
+# OpenSUSE
+# Python 2
+$ zypper in python
+# Python 3
+$ zypper in python 3
+
+# Arch Linux
+# Python 2
+# pacman -Syu : root permission
+# pacman -S python2 : root permission
+# Python 3
+# pacman -Syu
+# pacman -S python
+
+
+[cloudshell-user@ip-10-0-185-61 ~]$ uname -a
+Linux ip-10-0-185-61.ap-south-1.compute.internal 4.14.238-182.422.amzn2.x86_64 #1 SMP Tue Jul 20 20:35:54 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+[cloudshell-user@ip-10-0-185-61 ~]$
+[cloudshell-user@ip-10-0-185-61 ~]$ sudo yum install python3
+Loaded plugins: ovl, priorities
+amzn2-core                                                                                           | 3.7 kB  00:00:00     
+Package python3-3.7.10-1.amzn2.0.1.x86_64 already installed and latest version
+Nothing to do
+
+Ex-1: Python Files & Interpreter
+
+[cloudshell-user@ip-10-0-185-61 Python]$ cat test.py 
+#!/usr/bin/python3
+
+print("My first code..")
+[cloudshell-user@ip-10-0-185-61 Python]$
+[cloudshell-user@ip-10-0-185-61 Python]$ ls -l test.py 
+-rw-rw-r-- 1 cloudshell-user cloudshell-user 51 Aug 19 06:39 test.py
+[cloudshell-user@ip-10-0-185-61 Python]$ chmod u+x test.py 
+[cloudshell-user@ip-10-0-185-61 Python]$ ls -l test.py 
+-rwxrw-r-- 1 cloudshell-user cloudshell-user 51 Aug 19 06:39 test.py
+[cloudshell-user@ip-10-0-185-61 Python]$ ./test.py 
+My first code..
+
+Ex-2: Numbers & Text In Python
+
+[cloudshell-user@ip-10-0-185-61 Python]$ python3
+python3     python3.7   python3.7m  
+[cloudshell-user@ip-10-0-185-61 Python]$ python3.7
+Python 3.7.10 (default, Jun  3 2021, 00:02:01) 
+[GCC 7.3.1 20180712 (Red Hat 7.3.1-13)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 10+25
+35
+>>> 15
+15
+>>> print(10+15)
+25
+>>> print(5*10/20-3**2)
+-6.5
+>>> 3**2
+9
+>>> "Hello World!!!"
+'Hello World!!!'
+>>> print("hello worlds...")
+hello worlds...
+>>> print("Hello"+"Worlds"+"....")
+HelloWorlds....
+>>> 
+
+Ex-3: Python Variables
+
+>>> a=10
+>>> a
+10
+>>> a="Hello World..."
+>>> a
+'Hello World...'
+>>> a_int=2.5
+>>> a_int
+2.5
+>>> a_mul=2**3
+>>> a_mul
+8
+>>> print(a_mul)
+8
+>>> a=2
+>>> b=2**3
+>>> print(a==b)
+False
+>>> strin1="hello"
+>>> strin2="world"
+>>> print(strin1==strin2)
+False
+>>> a=2
+>>> b=2
+>>> print(a==b)
+True
+>>> string1="hello"
+>>> string2="hello"
+>>> print(string1==string2)
+True
+>>> 2>3
+False
+>>> 2**3>10
+False
+>>> 6*2<=10
+False
+>>> 6*2>=20
+False
+>>> "Java" != "Program"
+True
+>>> "Java" == "Java"
+True
+>>> 
+
+Ex-4: Number Variables In Python
+
+>>> 10/2
+5.0
+>>> 10/4
+2.5
+>>> 20+2.5
+22.5
+>>> 25*3-(2/3)+10
+84.33333333333333
+>>> a=10
+>>> a+=10
+>>> a
+20
+>>> a=(a**2)/10
+>>> a
+40.0
+>>> a+=1
+>>> a
+41.0
+>>> a-=10
+>>> a
+31.0
+>>> a*=2
+>>> a
+62.0
+>>> a/=10
+>>> a
+6.2
+>>> a**=2
+>>> a
+38.440000000000005
+>>> 
+
+[cloudshell-user@ip-10-0-185-61 Python]$ python3
+Python 3.7.10 (default, Jun  3 2021, 00:02:01) 
+[GCC 7.3.1 20180712 (Red Hat 7.3.1-13)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a=math.sqrt(2+4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'math' is not defined
+>>> import math
+>>> a=math.sqrt(2+4)
+>>> print(a)
+2.449489742783178
+>>> 
+
+# Execute through program
+
+[cloudshell-user@ip-10-0-185-61 Python]$ cat square.py 
+#!/usr/bin/python3
+
+import math
+cal=math.sqrt(2)
+print(cal)
+[cloudshell-user@ip-10-0-185-61 Python]$ ./square.py 
+1.4142135623730951
+[cloudshell-user@ip-10-0-185-61 Python]$
+
+Ex-5: Python String
+
+>>> user_input=input("Enter any no...: ")
+Enter any no...: 24
+>>> print(user_input)
+24
+>>> ur_name=input("Enter your name ?")
+Enter your name ? Java
+>>> ur_name
+' Java'
+>>> print("Hello"+ur_name+"!!!")
+Hello Java!!!
+>>> 
+>>> msg=ur_name+"is a good name"
+>>> msg
+' Javais a good name'
+>>> msg=ur_name + "is a good name"
+>>> msg
+' Javais a good name'
+>>> msg=ur_name + " is a good name "
+>>> msg
+' Java is a good name '
+>>> msg1=ur_name + msg
+>>> msg1
+' Java Java is a good name '
+>>> print(msg1)
+ Java Java is a good name 
+>>> 
+>>> msg1 = ur_name + "\n" + msg
+>>> print(msg1)
+ Java
+ Java is a good name 
+>>> 
+
+# TypeError
+
+>>> print("hello" + 42)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> 
+
+>>> print("hello " + str(42))
+hello 42
+
+>>> a=42
+>>> print("The value is %d" % a) 
+The value is 42
+>>> a=42.02
+>>> print("The value is %d" % a) 
+The value is 42
+>>> print("The value is %f" % a) 
+The value is 42.020000
+>>> a="hello"
+>>> print("The value is %f" % a) 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: must be real number, not str
+>>> print("The value is %s" % a) 
+The value is hello
+
+>>> a=10
+>>> b=20.20
+>>> sum=a + b
+>>> print("The sum of %d and %f " % (a,b,sum))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: not all arguments converted during string formatting
+>>> print("The sum of %d and %f is %f" % (a,b,sum))
+The sum of 10 and 20.200000 is 30.200000
+>>> 
+
+
+
+
+
+
+
+
