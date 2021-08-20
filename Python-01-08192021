@@ -265,9 +265,13 @@ Traceback (most recent call last):
 TypeError: not all arguments converted during string formatting
 >>> print("The sum of %d and %f is %f" % (a,b,sum))
 The sum of 10 and 20.200000 is 30.200000
->>> 
 
+# 
 
+>>> print("The sum of %d and %.2f is %f " % (a,b,sum))
+The sum of 10 and 20.20 is 30.200000 
+>>> print("The sum of %d and %.2f is %.2f " % (a,b,sum))
+The sum of 10 and 20.20 is 30.20 
 
 
 
