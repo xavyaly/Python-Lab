@@ -1,0 +1,393 @@
+# Python Programs
+
+>>> string_1 = "Welcome to UPSC Exam"
+>>> print(string_1)
+Welcome to UPSC Exam
+>>> print(string_1[0])
+W
+>>> print(string_1[4])
+o
+>>> print(string_1[-1])
+m
+>>> print(len(string_1))
+20
+
+# SLICING
+
+>>> print(string_1[2:10])
+lcome to
+>>> print(string_1[2:20])
+lcome to UPSC Exam
+>>> print(string_1[0:21])
+Welcome to UPSC Exam
+>>> print(string_1[:21])
+Welcome to UPSC Exam
+>>> print(string_1[10:])
+ UPSC Exam
+>>> print(string_1[-10:])
+ UPSC Exam
+ 
+ # UPPER & LOWER CASE 
+ 
+ >>> print(string_1.upper())
+WELCOME TO UPSC EXAM
+>>> print(string_1.lower())
+welcome to upsc exam
+>>> print(string_1.find("to"))
+8
+>>> print(string_1.replace("to","here"))
+Welcome here UPSC Exam
+
+
+# SINGLE LINE COMMENTS
+
+# MULTI LINE COMMENTS
+>>> '''Multi line comments'''
+'Multi line comments'
+>>> """Multi line comments"""
+'Multi line comments'
+>>> """
+... Multi line
+... comments
+... in python
+... supports"""
+'\nMulti line\ncomments\nin python\nsupports'
+>>> 
+>>> 
+
+[cloudshell-user@ip-10-0-67-104 Python]$ cat -n multiline.py 
+     1  #!/usr/bin/python
+     2
+     3  # Single line comments
+     4  """ This script is use for house keeping
+     5  and created <XYZ user>
+     6  """
+     7  print("Python supports multi line comments...")
+[cloudshell-user@ip-10-0-67-104 Python]$ chmod u+x multiline.py 
+[cloudshell-user@ip-10-0-67-104 Python]$ chmod 755 multiline.py 
+[cloudshell-user@ip-10-0-67-104 Python]$ ./multiline.py 
+Python supports multi line comments...
+[cloudshell-user@ip-10-0-67-104 Python]$ 
+
+# LISTS: []
+
+>>> string_1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'string_1' is not defined
+>>> list_1=["C","C++","Java","Python","Shell Scripting"]
+>>> print(list_1)
+['C', 'C++', 'Java', 'Python', 'Shell Scripting']
+>>> print(list_1[0])
+C
+>>> print(list_1[5])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> print(list_1[4])
+Shell Scripting
+>>> print(list_1[-2])
+Python
+>>> print(list_1[-2:0])
+[]
+>>> print(list_1[-1:0])
+[]
+>>> print(list_1[-1:-3])
+[]
+>>> print(list_1[:3])
+['C', 'C++', 'Java']
+>>> print(list_1[1:4])
+['C++', 'Java', 'Python']
+>>> print(list_1[-3:-1])
+['Java', 'Python']
+>>> 
+
+# LIST: []
+
+>>> list_1
+['C', 'C++', 'Java', 'Python', 'Shell Scripting']
+>>> 
+>>> print(len(list_1))
+5
+>>> print(len(list_1)-1)
+4
+>>> print(list_1(len(list_1)-1))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'list' object is not callable
+>>> print(list_1[len(list_1)-1])
+Shell Scripting
+>>> 
+>>> list_1
+['C', 'C++', 'Java', 'Python', 'Shell Scripting']
+>>> 
+>>> print(list_1.append("Perl"))
+None
+>>> list_1
+['C', 'C++', 'Java', 'Python', 'Shell Scripting', 'Perl']
+>>> 
+>>> print(list_1.pop())
+Perl
+>>> 
+>>> print(list_1.append(0,"Perl"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: append() takes exactly one argument (2 given)
+>>> print(list_1.append("0","Perl"))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: append() takes exactly one argument (2 given)
+>>> 
+>>> print(list_1.pop(4))
+Shell Scripting
+>>> list_1
+['C', 'C++', 'Java', 'Python']
+>>> 
+
+# NEXT
+
+>>> list_1
+['C', 'C++', 'Java', 'Python']
+>>> list_1.append("Perl")
+>>> list_1
+['C', 'C++', 'Java', 'Python', 'Perl']
+>>> 
+>>> 
+>>> 
+>>> print(list_1)
+['C', 'C++', 'Java', 'Python', 'Perl']
+>>> 
+>>> 
+>>> list_1
+['C', 'C++', 'Java', 'Python', 'Perl']
+>>> 
+>>> print(list_1.insert(3,"PowerShell"))
+None
+>>> list_1
+['C', 'C++', 'Java', 'PowerShell', 'Python', 'Perl']
+>>> 
+>>> print(list_1.remove("PowerShell"))
+None
+>>> 
+>>> list_1
+['C', 'C++', 'Java', 'Python', 'Perl']
+>>> 
+>>> print(list_1.remove(4))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+>>> 
+>>> list_1
+['C', 'C++', 'Java', 'Python', 'Perl']
+>>> print(list_1.remove(2))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+>>> >>> list_1
+  File "<stdin>", line 1
+    >>> list_1
+     ^
+SyntaxError: invalid syntax
+>>> ['C', 'C++', 'Java', 'Python']
+['C', 'C++', 'Java', 'Python']
+>>> >>> list_1.append("Perl")
+  File "<stdin>", line 1
+    >>> list_1.append("Perl")
+     ^
+SyntaxError: invalid syntax
+>>> >>> list_1
+  File "<stdin>", line 1
+    >>> list_1
+     ^
+SyntaxError: invalid syntax
+>>> ['C', 'C++', 'Java', 'Python', 'Perl']
+['C', 'C++', 'Java', 'Python', 'Perl']
+>>> >>> 
+  File "<stdin>", line 1
+    >>> 
+     ^
+SyntaxError: invalid syntax
+>>> >>> 
+  File "<stdin>", line 1
+    >>> 
+     ^
+SyntaxError: invalid syntax
+>>> >>> 
+  File "<stdin>", line 1
+    >>> 
+     ^
+SyntaxError: invalid syntax
+>>> >>> 
+
+# EXTEND
+
+>>> list_1
+['C', 'C++', 'Java', 'Python', 'Perl']
+>>> list_2=["Books","Mira","extend"]
+>>> list_2
+['Books', 'Mira', 'extend']
+>>> print(list_1.extend(list_2))
+None
+>>> list_1
+['C', 'C++', 'Java', 'Python', 'Perl', 'Books', 'Mira', 'extend']
+>>> list_2
+['Books', 'Mira', 'extend']
+>>> 
+>>> print(list_2.extend(list_1))
+None
+>>> list_1
+['C', 'C++', 'Java', 'Python', 'Perl', 'Books', 'Mira', 'extend']
+>>> list_2
+['Books', 'Mira', 'extend', 'C', 'C++', 'Java', 'Python', 'Perl', 'Books', 'Mira', 'extend']
+>>> 
+
+# INDEX
+
+>>> print(list_1[0])
+C
+>>> print(list_1["Python"])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list indices must be integers or slices, not str
+>>> print(list_1.index["Python"])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>> 
+>>> print(list_1.index("Python"))
+3
+>>> 
+>>> 1/0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+>>> print('java)
+  File "<stdin>", line 1
+    print('java)
+               ^
+SyntaxError: EOL while scanning string literal
+>>>
+
+# SORT & REVERSE
+
+>>> list_1
+['C', 'C++', 'Java', 'Python', 'Perl', 'Books', 'Mira', 'extend']
+>>> print(list_1.sort())
+None
+>>> list_1
+['Books', 'C', 'C++', 'Java', 'Mira', 'Perl', 'Python', 'extend']
+>>> 
+>>> num_to_sort=[1,3,5,23,56,-1,78,43]
+>>> print(num_to_sort.sort())
+None
+>>> num_to_sort
+[-1, 1, 3, 5, 23, 43, 56, 78]
+>>> 
+>>> print(list_1.reverse())
+None
+>>> 
+>>> list_1
+['extend', 'Python', 'Perl', 'Mira', 'Java', 'C++', 'C', 'Books']
+>>> 
+
+# SINGLE, MULTI DIMENTION
+
+>>> 2_dimention_list=[[1,2,3,4,5],[6,7,8,9,0,1],[-1,2,4,6,7]]
+  File "<stdin>", line 1
+    2_dimention_list=[[1,2,3,4,5],[6,7,8,9,0,1],[-1,2,4,6,7]]
+     ^
+SyntaxError: invalid token
+>>> dimention_list=[[1,2,3,4,5],[6,7,8,9,0,1],[-1,2,4,6,7]]
+>>> 
+>>> print(dimention_list[0])
+[1, 2, 3, 4, 5]
+>>> print(dimention_list[0][1])
+2
+>>> 
+>>> print(dimention_list[1][3])
+9
+>>> 
+>>> dimention_list=[[[1,2,3,4,5],[6,7,8,9,0,1],[-1,2,4,6,7],],[[0,1,2,3,4],[0,2,4,6,8],[0,3,6,9,10],],[[0,2,1,4,3],[0,2,3,5,8],[0,23,45,89,90]]]
+>>> dimention_list
+[[[1, 2, 3, 4, 5], [6, 7, 8, 9, 0, 1], [-1, 2, 4, 6, 7]], [[0, 1, 2, 3, 4], [0, 2, 4, 6, 8], [0, 3, 6, 9, 10]], [[0, 2, 1, 4, 3], [0, 2, 3, 5, 8], [0, 23, 45, 89, 90]]]
+>>> print(dimention_list[0])
+[[1, 2, 3, 4, 5], [6, 7, 8, 9, 0, 1], [-1, 2, 4, 6, 7]]
+>>> print(dimention_list[0][1][]2)
+  File "<stdin>", line 1
+    print(dimention_list[0][1][]2)
+                               ^
+SyntaxError: invalid syntax
+>>> print(dimention_list[0][1][2])
+8
+>>> 
+
+# POP, APPEND
+
+>>> dimention_list=[[1,2,3,4,5],[6,7,8,9,0,1],[-1,2,4,6,7]]
+>>> 
+>>> print(dimention_list.append([2,3,4,5,6]))
+None
+>>> dimention_list
+[[1, 2, 3, 4, 5], [6, 7, 8, 9, 0, 1], [-1, 2, 4, 6, 7], [2, 3, 4, 5, 6]]
+>>> 
+>>> print(dimention_list.pop(0)
+... )
+[1, 2, 3, 4, 5]
+>>> dimention_list
+[[6, 7, 8, 9, 0, 1], [-1, 2, 4, 6, 7], [2, 3, 4, 5, 6]]
+>>> 
+>>> print(dimention_list.pop(3))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: pop index out of range
+>>> 
+>>> print(dimention_list[1].pop(3))
+6
+>>> 
+>>> 
+
+# POP, REVERSE, APPEND, INSERT
+
+>>> dimention_list
+[[6, 7, 8, 9, 0, 1], [-1, 2, 4, 7], [2, 3, 4, 5, 6]]
+>>> 
+>>> print(dimention_list.reverse())
+None
+>>> dimention_list
+[[2, 3, 4, 5, 6], [-1, 2, 4, 7], [6, 7, 8, 9, 0, 1]]
+>>> 
+>>> print(dimention_list[2].pop(4))
+0
+>>> dimention_list
+[[2, 3, 4, 5, 6], [-1, 2, 4, 7], [6, 7, 8, 9, 1]]
+>>> 
+>>> print(dimention_list[2].append(0))
+None
+>>> 
+>>> dimention_list
+[[2, 3, 4, 5, 6], [-1, 2, 4, 7], [6, 7, 8, 9, 1, 0]]
+>>> 
+>>> print(dimention_list[2].pop(4))
+1
+>>> 
+>>> print(dimention_list[2].insert(0,13))
+None
+>>> dimention_list
+[[2, 3, 4, 5, 6], [-1, 2, 4, 7], [13, 6, 7, 8, 9, 0]]
+>>> 
+>>> print(dimention_list.extend([1,2,3,4,5,6]))
+None
+>>> 
+>>> dimention_list
+[[2, 3, 4, 5, 6], [-1, 2, 4, 7], [13, 6, 7, 8, 9, 0], 1, 2, 3, 4, 5, 6]
+>>> print(dimention_list[0].extend([1,2,3,4,5,6]))
+None
+>>> 
+>>> dimention_list
+[[2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6], [-1, 2, 4, 7], [13, 6, 7, 8, 9, 0], 1, 2, 3, 4, 5, 6]
+>>> 
+>>> 
+
+
+
+
