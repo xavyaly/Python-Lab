@@ -1,0 +1,279 @@
+# Python Programming
+
+# TUPLE: ()
+
+>>> 2_random_no=('java')
+  File "<stdin>", line 1
+    2_random_no=('java')
+     ^
+SyntaxError: invalid token
+>>> _random_no=('java')
+>>> _random_no=('java',7,'false',10,'String')
+>>> 
+>>> print(_random_no[2])
+false
+>>> print(_random_no[5])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: tuple index out of range
+>>> 
+>>> print(_random_no[-2])
+10
+>>> print(len(_random_no))
+5
+>>> 
+>>> print(len(_random_no)-1)
+4
+>>> 
+>>> file=('/etc/passwd','/etc/ssh/sshd_config','/var/www/html')
+>>> 
+>>> print(file[0])
+/etc/passwd
+>>> 
+>>> print(file[-1])
+/var/www/html
+>>> 
+>>> print(file.append('/xyz/'))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'append'
+
+# BOOLEAN OPERATORS
+
+T && T: T
+T && F: F
+F && F: F
+F && T: F
+
+T || T: T
+T || F: T
+F || T: T
+F || F: F
+
+!T: F
+!F: T
+
+!: not
+&&: and
+||: or
+
+>>> 
+>>> 2>4
+False
+>>> 
+>>> is_it_true=(2**4 < 20) and (2+3 > 10)
+>>> print(is_it_true)
+False
+>>> 
+>>> is_it_true=(2**4 < 20) OR (2+3 > 10)
+  File "<stdin>", line 1
+    is_it_true=(2**4 < 20) OR (2+3 > 10)
+                            ^
+SyntaxError: invalid syntax
+>>> 
+>>> is_it_true=(2**4 < 20) or (2+3 > 10)
+>>> print(is_it_true)
+True
+>>> 
+>>> is_it_true=(2**4 < 20) or (2+3 > 10) and (3**4 > 20)
+>>> print(is_it_true)
+True
+>>> 
+>>> is_it_true=(2**4 < 20) or (2+3 > 10) and (3**4 > 20) and (9*2 != 20)
+>>> print(is_it_true)
+True
+>>> 
+>>> is_if_T_or_F=(2**4 <= 16)
+>>> print(is_if_T_or_F)
+True
+>>> 
+>>> is_if_T_or_F=not (2**4 <= 16)
+>>> print(is_if_T_or_F)
+False
+>>> 
+>>> is_it_true=(2**4 < 20) or (2+3 > 10) and (3**4 / 20) and (9*2 != 20)
+>>> print(is_it_true)
+True
+>>> 
+
+>>> import math
+>>> value=math.sqrt((2**4))
+>>> print(value)
+4.0
+
+# IF STATEMENT
+
+# IN SHELL SCRIPTING
+IF [COND..]: THEN
+  ECHO "STATEMENT"
+FI
+
+# IN PYTHON: INDENTATION REALLY MATTER
+
+# IF
+IF (COND..):
+  PRINT(STATEMENT)
+  
+# IF ELSE
+IF (COND..):
+  PRINT(STATEMENT)
+ELSE:
+  PRINT(STATEMENT)
+  
+# IF ELIF ELSE
+IF (COND..):
+  PRINT(STATEMENT)
+ELIF(COND..):
+  PRINT(STATEMENT)
+ELSE:
+  PRINT(STATEMENT)
+
+# NESTED IF ELIF ELSE
+
+>>> if (2**4 >= 10):
+...     print("Statement is true..")
+... 
+Statement is true..
+>>> 
+>>> if ((2**4 < 20) or (2+3 > 10) and (3**4 / 20) and (9*2 != 20)):
+...     print("Statement is true...")
+... 
+Statement is true...
+>>> 
+>>> if (not (2**4 <= 16)):
+...     print("print if st. is true")
+... print("print if st. is false")
+  File "<stdin>", line 3
+    print("print if st. is false")
+        ^
+SyntaxError: invalid syntax
+>>> 
+>>> if (not (2**4 <= 16)):
+...     print("print if st. is true")
+... 
+>>> 
+>>> if (not (2**4 <= 16)):
+...     print("print if st. is true")
+... else:
+...     print("print if st. is false")
+... 
+print if st. is false
+>>> 
+>>> if ((2**4 < 20) or (2+3 > 10) and (3**4 / 20) and (9*2 != 20)):
+... print("All good...")
+  File "<stdin>", line 2
+    print("All good...")
+        ^
+IndentationError: expected an indented block
+>>> 
+>>> if ((2**4 < 20) or (2+3 > 10) and (3**4 / 20) and (9*2 != 20)):
+...     print("All good...")
+... else:
+...     print("All is not good")
+... 
+All good...
+>>> 
+>>> 
+>>> if ((2**4 < 20) or (2+3 > 10) and (3**4 / 20) and (9*2 != 20)):
+...     print("First statement is correct..")
+... elif (2**4 < 10):
+...     print("Second statement is correct..")
+... else:
+...     print("Second statement is not correct...")
+... 
+First statement is correct..
+>>> 
+>>> if (!(2**4 < 20)):
+  File "<stdin>", line 1
+    if (!(2**4 < 20)):
+        ^
+SyntaxError: invalid syntax
+>>> 
+>>> if (! (2**4 < 20)):
+  File "<stdin>", line 1
+    if (! (2**4 < 20)):
+        ^
+SyntaxError: invalid syntax
+>>> 
+>>> if (not (2**4 < 20)):
+...     print("First statement is correct..")
+... elif (2**4 < 10):
+...     print("Second statement is correct..")
+... else:
+...     print("Second statement is not correct...")
+... 
+Second statement is not correct...
+>>> 
+
+>>> if (2**4 > 16):
+...     print("It's greater")
+... elif(2**4 < 16):
+...     print("It's is less")
+... elif(2**4 == 16):
+...     print("It's is equal")
+... else:
+...     print("It's is not equal")
+... 
+It's is equal
+>>> 
+
+>>> a=10
+>>> b=15
+>>> c=20
+>>> d=25
+>>> 
+>>> a,b,c,d=10,15,20,25
+>>> a
+10
+>>> b
+15
+>>> c
+20
+>>> d
+25
+>>> a,b,c=10,15
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: not enough values to unpack (expected 3, got 2)
+>>> 
+>>> a,b,c,d=10,15,20,25
+>>> if(a>b):
+...     if(a+b >= d):
+...             d == d
+...             d == d
+KeyboardInterrupt
+>>> 
+>>> a,b,c,d=10,15,20,25
+>>> if(a>b):
+...     if(a+b >= d):
+...             d -= c
+...     elif(a+b >=c):
+...             c -= b
+...     else:
+...             b -=a
+... elif(b>c):
+...     print(b-c)
+... else:
+...     print(d)
+... 
+25
+>>> 
+>>> a
+10
+>>> a-=2
+>>> a
+8
+>>> a+=2
+>>> a
+10
+>>> a/=2
+>>> a
+5.0
+>>> a%=2
+>>> a
+1.0
+>>> 
+
+# WHILE LOOP
+
+
