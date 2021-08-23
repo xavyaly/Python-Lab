@@ -1,0 +1,260 @@
+# Python Programming
+
+# SPACE IN TUPLES AND LISTS
+
+>>> a=[1,2,3]
+>>> a[0]
+1
+>>> a[2]
+3
+>>> a.__sizeof__()
+64
+>>> b=(1,2,3)
+>>> b[0]
+1
+>>> b[1]
+2
+>>> b.__sizeof__()
+48
+>>> 
+
+# Ex-1:
+
+>>> time
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'time' is not defined
+>>> # Import time for sleep
+>>> import time
+>>> # while loo
+>>> while(True):
+...     print("Timing...")
+...     time.sleep(2)
+... 
+Timing...
+Timing...
+Timing...
+Timing...
+^CTraceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+KeyboardInterrupt
+>>> 
+>>> dir(time)
+['CLOCK_BOOTTIME', 'CLOCK_MONOTONIC', 'CLOCK_MONOTONIC_RAW', 'CLOCK_PROCESS_CPUTIME_ID', 'CLOCK_REALTIME', 'CLOCK_THREAD_CPUTIME_ID', '_STRUCT_TM_ITEMS', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 'altzone', 'asctime', 'clock', 'clock_getres', 'clock_gettime', 'clock_gettime_ns', 'clock_settime', 'clock_settime_ns', 'ctime', 'daylight', 'get_clock_info', 'gmtime', 'localtime', 'mktime', 'monotonic', 'monotonic_ns', 'perf_counter', 'perf_counter_ns', 'process_time', 'process_time_ns', 'pthread_getcpuclockid', 'sleep', 'strftime', 'strptime', 'struct_time', 'thread_time', 'thread_time_ns', 'time', 'time_ns', 'timezone', 'tzname', 'tzset']
+>>> 
+
+Ex-2:
+
+# SHELL SCRIPTING
+while command
+do
+   Statement(s) to be executed if command is true
+done
+
+# PYTHON
+while condition:
+  expression
+
+>>> count=0
+>>> while(count < 10):
+...     print("Loop count: %d" % (count+1))
+...     count+=1
+... 
+Loop count: 1
+Loop count: 2
+Loop count: 3
+Loop count: 4
+Loop count: 5
+Loop count: 6
+Loop count: 7
+Loop count: 8
+Loop count: 9
+Loop count: 10
+>>> 
+
+# INFINITE LOOP
+>>> count=0
+>>> while(count < 10):
+...     print("Loop count: %d" % (count+1))
+...
+Loop count: 1
+Loop count: 1
+Loop count: 1
+Loop count: 1
+Loop count: 1
+Loop count: 1
+^CTraceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+KeyboardInterrupt
+
+# BREAK, IMPORT
+
+>>> count=0
+>>> while(count < 10):
+...     print("Loop count: %d" % (count+1))
+...     break
+... 
+Loop count: 1
+>>> 
+
+>>> import random
+>>> random.randint(1,20)
+3
+>>> random.randint(1,20)
+11
+>>> random.randint(1,20)
+5
+>>> 
+>>> # import module
+>>> dir(random)
+['BPF', 'LOG4', 'NV_MAGICCONST', 'RECIP_BPF', 'Random', 'SG_MAGICCONST', 'SystemRandom', 'TWOPI', '_BuiltinMethodType', '_MethodType', '_Sequence', '_Set', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_acos', '_bisect', '_ceil', '_cos', '_e', '_exp', '_inst', '_itertools', '_log', '_os', '_pi', '_random', '_sha512', '_sin', '_sqrt', '_test', '_test_generator', '_urandom', '_warn', 'betavariate', 'choice', 'choices', 'expovariate', 'gammavariate', 'gauss', 'getrandbits', 'getstate', 'lognormvariate', 'normalvariate', 'paretovariate', 'randint', 'random', 'randrange', 'sample', 'seed', 'setstate', 'shuffle', 'triangular', 'uniform', 'vonmisesvariate', 'weibullvariate']
+>>> 
+>>> import random
+>>> while(True):
+...     no=random.randint(1,10)
+...     print(no)
+...     if(no == 5):
+...             print("Stopping...")
+...             break
+...     else:
+...             print("Still printing...")
+... 
+5
+Stopping...
+
+Ex-3:
+
+# FOR LOOP
+
+#SHELL SCRIPTING
+for condition:
+do
+  statement
+done
+
+# PYTHON
+
+>>> for i in range(1,10):
+...     print(i)
+... 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>> 
+>>> for i in range(1,10,2):
+...     print(i)
+... 
+1
+3
+5
+7
+9
+>>> for i in range(1,10,1):
+...     print(i)
+... 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>>
+>>> for i in range(1,10,2):
+...     print("*****")
+... 
+*****
+*****
+*****
+*****
+*****
+>>> 
+
+# APPEND
+
+>>> a=[1,2,3]
+>>> a.append(4)
+>>> a
+[1, 2, 3, 4]
+>>> a.pop()
+4
+>>> a
+[1, 2, 3]
+>>> 
+
+[cloudshell-user@ip-10-0-160-231 ~]$ cat -n append.py 
+     1  #!/usr/bin/python
+     2
+     3  a=[]
+     4  for i in range(1,20):
+     5      a.append(i * 2)
+     6  #    print(i * 2)
+     7  print(a)
+[cloudshell-user@ip-10-0-160-231 ~]$ ./append.py 
+[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38]
+[cloudshell-user@ip-10-0-160-231 ~]$ 
+
+Ex:
+
+>>> a=[1,2,3]
+>>> for i in a:
+...     print(i)
+... 
+1
+2
+3
+>>> 
+[cloudshell-user@ip-10-0-160-231 ~]$ cat -n listAppend.py 
+     1  #!/usr/bin/python
+     2
+     3  # Create a list
+     4  linux_lang='linux','fedora',"centos",'Aws','Azure'
+     5
+     6  # Create an empty list
+     7  a=[]
+     8
+     9  for i in linux_lang:
+    10      a.append(i.upper())
+    11
+    12  print(linux_lang)
+    13  print(a)
+    14
+    15
+[cloudshell-user@ip-10-0-160-231 ~]$ ./listAppend.py 
+('linux', 'fedora', 'centos', 'Aws', 'Azure')
+['LINUX', 'FEDORA', 'CENTOS', 'AWS', 'AZURE']
+[cloudshell-user@ip-10-0-160-231 ~]$ 
+
+[cloudshell-user@ip-10-0-160-231 ~]$ cat -n listAppend.py 
+     1  #!/usr/bin/python
+     2
+     3  # Create a list
+     4  linux_lang='Linux','Fedora',"Centos",'Aws','Azure'
+     5
+     6  # Create an empty list
+     7  a=[]
+     8
+     9  for i in linux_lang:
+    10      a.append(i.lower())
+    11
+    12  print(linux_lang)
+    13  print(a)
+    14
+    15
+[cloudshell-user@ip-10-0-160-231 ~]$ ./listAppend.py 
+('Linux', 'Fedora', 'Centos', 'Aws', 'Azure')
+['linux', 'fedora', 'centos', 'aws', 'azure']
+[cloudshell-user@ip-10-0-160-231 ~]$ 
+
+
+
+
+
