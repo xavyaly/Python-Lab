@@ -1,0 +1,259 @@
+# Python Programming
+
+>>> list=[1,2,3]
+>>> tuple=(1,2,3)
+>>> dict={'a':2,'b':'string'}
+>>> dict[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 0
+>>> dict[a]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'list'
+>>> dict['a']
+2
+>>> dict['b']
+'string'
+>>> dict["b"]
+'string'
+>>> 
+
+>>> type(dict)
+<class 'dict'>
+>>> type(list)
+<class 'list'>
+>>> type(tuple)
+<class 'tuple'>
+>>> 
+
+>>> dict_lang={'mac':'pip','ubuntu':'apt-get','linux':'yum','linux':'rpm','opensuse':'zapper'}
+>>> print(dict_lang['linux'])
+rpm
+>>> print(dict_lang['linux'])
+rpm
+>>> dict_lang={'mac':'pip','ubuntu':'apt-get','linux':'yum','linux_1':'rpm','opensuse':'zapper'}
+>>> 
+>>> print(dict_lang['linux'])
+yum
+>>> print(dict_lang['linux_1'])
+rpm
+>>> dict_lang['linux_1']='apt-get'
+>>> print(dict_lang['linux_1'])
+apt-get
+>>> dict_lang
+{'mac': 'pip', 'ubuntu': 'apt-get', 'linux': 'yum', 'linux_1': 'apt-get', 'opensuse': 'zapper'}
+>>> 
+>>> del dict_lang['linux']
+>>> dict_lang
+{'mac': 'pip', 'ubuntu': 'apt-get', 'linux_1': 'apt-get', 'opensuse': 'zapper'}
+>>> 
+
+>>> empty_dict={}
+>>> empty_dict
+{}
+>>> print(empty_dict)
+{}
+>>> 
+>>> empty_dict['Mac']='pip'
+>>> print(empty_dict)
+{'Mac': 'pip'}
+>>> 
+>>> empty_dict['list']=[1,2,3,4]
+>>> print(empty_dict)
+{'Mac': 'pip', 'list': [1, 2, 3, 4]}
+>>> 
+>>> empty_dict['2']='Java'
+>>> print(empty_dict)
+{'Mac': 'pip', 'list': [1, 2, 3, 4], '2': 'Java'}
+>>> 
+>>> print(empty_dict['list'][1])
+2
+>>> 
+
+>>> dict_lang
+{'mac': 'pip', 'ubuntu': 'apt-get', 'linux_1': 'apt-get', 'opensuse': 'zapper'}
+>>> 
+>>> print(dict_lang.items())
+dict_items([('mac', 'pip'), ('ubuntu', 'apt-get'), ('linux_1', 'apt-get'), ('opensuse', 'zapper')])
+>>>
+
+# FOR LOOP, KEY AND VALUE
+
+>>> dict_lang
+{'mac': 'pip', 'ubuntu': 'apt-get', 'linux_1': 'apt-get', 'opensuse': 'zapper'}
+>>> 
+>>> key=dict_lang.keys()
+>>> for i in key:
+...     print(i)
+... 
+mac
+ubuntu
+linux_1
+opensuse
+>>> 
+>>> value=dict_lang.values()
+>>> value
+dict_values(['pip', 'apt-get', 'apt-get', 'zapper'])
+>>> 
+>>> for j in value:
+...     print(j)
+... 
+pip
+apt-get
+apt-get
+zapper
+>>> 
+>>> 
+
+
+>>> book_info={'title':'Python3.7','page':208,'price':300,'chapters':12}>>> print("The book title is %(title)s, it's total page is %(page)d, and the book price is %(price)d, total chapter is %(chapters)d" % book_info)
+The book title is Python3.7, it's total page is 208, and the book price is 300, total chapter is 12
+>>> 
+
+>>> dict_lang{'mac': 'pip', 'ubuntu': 'apt-get', 'linux_1': 'apt-get', 'opensuse': 'zapper'}
+>>> 
+>>> for i in dict_lang:
+...     print("If OS is %s, then install using %s command" % (i,dict_lang[i]) )
+... 
+If OS is mac, then install using pip command
+If OS is ubuntu, then install using apt-get command
+If OS is linux_1, then install using apt-get command
+If OS is opensuse, then install using zapper command
+>>> 
+
+# FUNCTION
+
+SYNTAX:
+def <function_name>:
+  statement..
+   
+>>> print("Hello World!!!")
+Hello World!!!
+>>> 
+>>> # Create a function
+>>> def print_hello():
+...     print("Hello World!!!!")
+... 
+>>> # Call the function
+>>> print_hello()
+Hello World!!!!
+>>> 
+
+Ex-1:
+
+[cloudshell-user@ip-10-0-153-37 Python]$ cat -n func.py 
+     1  #!/usr/bin/python
+     2
+     3  # create a function
+     4  def print_hello():
+     5      print("hello world...")
+     6
+     7  # call the function
+     8  # print_hello()
+     9
+    10  list=[[1,2,3],[4,5,6],[7,8,9]]
+    11  for i in list:
+    12      for j in i:
+    13          print(j)
+    14          print_hello()
+[cloudshell-user@ip-10-0-153-37 Python]$ chmod u+x func.py 
+[cloudshell-user@ip-10-0-153-37 Python]$ ./func.py 
+1
+hello world...
+2
+hello world...
+3
+hello world...
+4
+hello world...
+5
+hello world...
+6
+hello world...
+7
+hello world...
+8
+hello world...
+9
+hello world...
+[cloudshell-user@ip-10-0-153-37 Python]$ 
+
+# FIND OUT A CUBE ROOT OF A LIST OF ITEMS
+
+[cloudshell-user@ip-10-0-153-37 Python]$ cat -n cube.py 
+     1  #!/usr/bin/python
+     2
+     3  # create a function
+     4  def cube(i):
+     5      return i**3
+     6
+     7  list_of_items=[1,2,3,4,5,6,7,8,9]
+     8
+     9  # iterate
+    10  for j in list_of_items:
+    11      print(cube(j))
+    12
+    13
+[cloudshell-user@ip-10-0-153-37 Python]$ chmod u+x cube.py 
+[cloudshell-user@ip-10-0-153-37 Python]$ ./cube.py 
+1
+8
+27
+64
+125
+216
+343
+512
+729
+[cloudshell-user@ip-10-0-153-37 Python]$ 
+
+# FIND THE SQUARE ROOT 
+
+[cloudshell-user@ip-10-0-153-37 Python]$ cat -n square.py 
+     1  #!/usr/bin/python
+     2
+     3  # create a function
+     4  def square(i):
+     5      return i**2
+     6
+     7  list_of_items=[1,2,3,4,5,6,7,8,9]
+     8
+     9  # iterate
+    10  for j in list_of_items:
+    11      print(square(j))
+    12
+    13
+[cloudshell-user@ip-10-0-153-37 Python]$ ./square.py 
+1
+4
+9
+16
+25
+36
+49
+64
+81
+[cloudshell-user@ip-10-0-153-37 Python]$ 
+
+# MULTIPLY
+
+[cloudshell-user@ip-10-0-153-37 Python]$ cat -n multiply.py 
+     1  #!/usr/bin/python
+     2
+     3  # create a function
+     4  def mul(i,j):
+     5      return i*j
+     6
+     7  # function call
+     8  print(mul(4,2))
+     9
+    10
+[cloudshell-user@ip-10-0-153-37 Python]$ chmod u+x multiply.py 
+[cloudshell-user@ip-10-0-153-37 Python]$ ./multiply.py 
+8
+
+
+
+
+
