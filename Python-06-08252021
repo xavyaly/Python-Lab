@@ -1,0 +1,213 @@
+# Python Programming
+
+Question-1:
+
+Write a program which will find all such nos which are divisible by 7 but are not a multiple of 5, between 1 & 100 (both included)
+The nos should be printed in a comma-separated sequence on a single line.
+
+Solution-1:
+[cloudshell-user@ip-10-0-165-200 Python]$ cat -n divisible.py 
+     1  #!/usr/bin/python
+     2
+     3  l=[]
+     4  for i in range(1,101):
+     5      if (i%7==0) and (i%5!=0):
+     6          l.append(str(i))
+     7
+     8  print(','.join(l))
+     9
+[cloudshell-user@ip-10-0-165-200 Python]$ ./divisible.py 
+7,14,21,28,42,49,56,63,77,84,91,98
+
+[cloudshell-user@ip-10-0-165-200 Python]$ cat -n divisible.py 
+     1  #!/usr/bin/python
+     2
+     3  l=[]
+     4  for i in range(1,101):
+     5      if (i%7==0) and (i%5!=0):
+     6          l.append(str(i))
+     7
+     8  #print(','.join(l))
+     9  print(l)
+    10
+[cloudshell-user@ip-10-0-165-200 Python]$ ./divisible.py 
+['7', '14', '21', '28', '42', '49', '56', '63', '77', '84', '91', '98']
+
+Question-2:
+
+Program to find a factorial of a given no.
+The nos should be printed in a comma-separated sequence on a single line.
+
+Hint:
+0!=1
+1!=1
+2!=2.1=2
+3!=3*2*1=6
+...
+6!=6*5*4*3*2*1=720
+...
+10!=?
+
+Solution-2:
+
+[cloudshell-user@ip-10-0-165-200 Python]$ cat -n fact.py 
+     1  #!/usr/bin/python
+     2
+     3  def fact(x):
+     4      if x==0:
+     5          return 1
+     6      else:
+     7          return x * fact(x-1)
+     8
+     9  x=int(input())
+    10  print(fact(x))
+[cloudshell-user@ip-10-0-165-200 Python]$ ./fact.py 
+12
+479001600
+[cloudshell-user@ip-10-0-165-200 Python]$ 
+[cloudshell-user@ip-10-0-165-200 Python]$ ./fact.py 
+3.2
+6
+[cloudshell-user@ip-10-0-165-200 Python]$ ./fact.py 
+10.02
+3628800
+[cloudshell-user@ip-10-0-165-200 Python]$ ./fact.py 
+3.7
+6
+[cloudshell-user@ip-10-0-165-200 Python]$
+
+Question-3:
+
+Program to generate a dictionary that contains (i,i*i) such that is an integral no between 1 and n (both included) and then program should print the dictionary.
+
+Hint:
+
+Input: 8
+Output: (1: 1,2: 4,3: 9,4: 16,5: 25,6: 36,7: 49,8: 64)
+
+use dict()
+
+a=dict={'a':'value'} # In general
+
+Solution-3:
+
+[cloudshell-user@ip-10-0-165-200 Python]$ cat -n squaredict.py 
+     1  #!/usr/bin/python
+     2
+     3  n=int(input())
+     4  d=dict()
+     5  for i in range(1,n+1):
+     6      d[i]=i*i
+     7
+     8  #d[1]=1
+     9  #d[2]=4
+    10
+    11  print(d)
+[cloudshell-user@ip-10-0-165-200 Python]$ ./squaredict.py 
+9
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+[cloudshell-user@ip-10-0-165-200 Python]$
+
+Question-4:
+
+Program which accepts a sequence of comma-separated nos from console and generate a list and a tuple which contains every nos.
+
+Input:
+12,24,35,45,68
+Output:
+'12','24','35','45','68'
+
+Use tuple()
+
+Solution-4:
+
+>>> values=input()
+12,24,35,45,68
+>>> values.split(',')
+['12', '24', '35', '45', '68']
+>>> l=values.split(',')
+>>> print(l)
+['12', '24', '35', '45', '68']
+>>> t=tuple(l)
+>>> print(t)
+('12', '24', '35', '45', '68')
+>>> 
+
+Question-5: After Class concept
+
+# List Comprehension
+
+>>> for i in range(1,5):
+...     print(i)
+... 
+1
+2
+3
+4
+>>> a=[print (i) for i in range(1,5)]
+1
+2
+3
+4
+>>> 
+>>> a=[print (i*i) for i in range(1,5)]
+1
+4
+9
+16
+>>> 
+>>> a=[i for i in range(1,5)]
+>>> print(a)
+[1, 2, 3, 4]
+>>> a=[x for x in range(1,5)]
+>>> print(a)
+[1, 2, 3, 4]
+
+Question-6:
+
+Program to calculate and prints the value according to the given formaula:
+Q: square root of [(2 * C * D)/H]
+
+C & H has fixed values
+C=20, H=10
+
+D is the variable whose values should be input to ur program in a comma-separated sequence.
+
+Input:
+50,20,40
+Output:
+x,y,z # At beginning 
+      # After execution 
+
+Hint: If output came in decimal format, it should be rounded off to its nearest value, for example below
+20.02 = 20
+25.0 = 25
+
+Solution-6:
+
+>>> import math
+>>> C,H=20,10
+>>> values=[]
+>>> items=[x for x in input().split(',')]
+1,2,3
+>>> for D in items:
+...     values.append(str(int(round(math.sqrt((2 * C * float(D))/H)))))
+... 
+>>> values
+['2', '3', '3']
+>>> print(','.join(values))
+2,3,3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
