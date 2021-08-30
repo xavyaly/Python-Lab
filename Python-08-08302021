@@ -1,0 +1,210 @@
+# Python BrushUp
+
+[cloudshell-user@ip-10-0-104-249 ~]$ python3.7
+Python 3.7.10 (default, Jun  3 2021, 00:02:01) 
+[GCC 7.3.1 20180712 (Red Hat 7.3.1-13)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+[cloudshell-user@ip-10-0-104-249 ~]$ python3.7
+Python 3.7.10 (default, Jun  3 2021, 00:02:01) 
+[GCC 7.3.1 20180712 (Red Hat 7.3.1-13)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> if_condition=True
+>>> if if_condition:
+...     print("Print the statement if it's true...")
+... 
+Print the statement if it's true...
+>>> # Used for single line commenting
+>>> ''' Multiple line comments....
+... multiple line comments..
+... ....
+... '''
+' Multiple line comments....\nmultiple line comments..\n....\n'
+>>> 
+
+>>> tax=10.20/100
+>>> price=100.50
+>>> price*tax
+10.251
+>>> price+_
+110.751
+>>> price+_ # '_' it will pick the latest value
+211.251
+>>> 
+>>> round(_,2)
+211.25
+
+>>> 'does not' # single quotes
+'does not'
+>>> 'doesn't' # single quotes
+  File "<stdin>", line 1
+    'doesn't' # single quotes
+           ^
+SyntaxError: invalid syntax
+>>> 'doesn\'t' # use of \' to escape the single quote
+"doesn't"
+>>> >>> 'doesn't'
+  File "<stdin>", line 1
+    'doesn't'
+           ^
+SyntaxError: invalid syntax
+>>> 'doesn\'t'
+"doesn't"
+>>> "doesn\'t"
+"doesn't"
+>>> 'hello sir,how r u ...'
+'hello sir,how r u ...'
+>>> 'hello "sir",how r u ...'
+'hello "sir",how r u ...'
+>>> "hello "sir",how r u ..."
+  File "<stdin>", line 1
+    "hello "sir",how r u ..."
+              ^
+SyntaxError: invalid syntax
+>>> "hello \"sir\",how r u ..." # use \"
+'hello "sir",how r u ...'
+>>> 
+
+>>> 'hello sir, "isn't" you...' # use of \'
+  File "<stdin>", line 1
+    'hello sir, "isn't" you...' # use of \'
+                     ^
+SyntaxError: invalid syntax
+>>> 'hello sir, "isn\'t" you...' # use of \'
+'hello sir, "isn\'t" you...'
+
+
+>>> print('hello sir, "isn\'t" you...')
+hello sir, "isn't" you...
+>>> 
+>>> print('hello sir, \n"isn\'t" you...')
+hello sir, 
+"isn't" you...
+>>> 
+
+>>> print(r'C:\x\y\nz') # raw string
+C:\x\y\nz
+
+>>> 2 * 'he' + 'll' + 'o'
+'hehello'
+>>> 
+>>> 'py' 'thon'
+'python'
+>>> 
+>>> string = ('put all string together..')
+>>> string
+'put all string together..'
+>>> 
+>>> a=10
+>>> a
+10
+>>> (2 * 'he') 'llo'
+  File "<stdin>", line 1
+    (2 * 'he') 'llo'
+                   ^
+SyntaxError: invalid syntax
+>>> 
+
+>>> word='Python'
+>>> word[0]
+'P'
+>>> word[:]
+'Python'
+>>> word[:-1]
+'Pytho'
+>>> word[2:5]
+'tho'
+>>> word[-2:]
+'on'
+>>> word[-2:]+word[2:]
+'onthon'
+>>> word[:2]+word[2:]
+'Python'
+>>> word[:4]+word[4:]
+'Python'
+>>> 
+
+
+>>> word[42]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> 
+
+
+>>> word[0]='J'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> 
+>>> word[2:]='py'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> 
+>>> word
+'Python'
+>>> 'J' + word[1:]
+'Jython'
+>>> 
+>>> word[:2] + 'py'
+'Pypy'
+>>> 
+>>> word
+'Python'
+>>> 
+
+>>> string='qwgieurfhusrfnljsbfavjhgfijhfjbfkh'
+>>> len(string)
+34
+>>> 
+>>> list=[1,2,3,4,5]
+>>> list + [2,3,4,5,6]
+[1, 2, 3, 4, 5, 2, 3, 4, 5, 6]
+>>> 
+
+>>> cubes=[1,8,27,81,125] # something wrong at here
+>>> 4**3
+64
+>>> cubes[3]=64 # replace the wrong value
+>>> cubes
+[1, 8, 27, 64, 125]
+
+
+>>> letters=['a','b','c','d','e','f']
+>>> letters
+['a', 'b', 'c', 'd', 'e', 'f']
+>>> letters[2:4]=['C,'D','E'] # replace the items
+  File "<stdin>", line 1
+    letters[2:4]=['C,'D','E'] # replace the items
+                      ^
+SyntaxError: invalid syntax
+>>> letters[2:4]=['C','D','E'] # replace the items
+>>> letters
+['a', 'b', 'C', 'D', 'E', 'e', 'f']
+>>> letters[2:4]=[]
+>>> letters
+['a', 'b', 'E', 'e', 'f']
+>>> 
+>>> letters
+['a', 'b', 'E', 'e', 'f']
+>>> letters[:]
+['a', 'b', 'E', 'e', 'f']
+>>> letters[:]=[]
+>>> letters
+[]
+>>> 
+
+>>> len(letters)
+0
+>>> letters=['a','b','c','d','e','f']
+>>> len(letters)
+6
+>>> n=[1,2,3]
+>>> x=[n,letters]
+>>> x
+[[1, 2, 3], ['a', 'b', 'c', 'd', 'e', 'f']]
+>>> x[0][1]
+2
+>>> 
+
