@@ -1,0 +1,242 @@
+# Python Programming
+
+>>> a='sgeuhjiksvfgnkjdfbgkjd'
+>>> len(a)
+22
+>>> 
+>>> a,b=0,2
+>>> while a < 10:
+...     print(a)
+...     a,b = b, a+b
+... 
+0
+2
+2
+4
+6
+>>> 
+
+>>> a,b=0,1
+>>> while a<1000:
+...     print(a,end=',')
+...     a,b=b,a+b
+... 
+0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,>>> 
+>>> 
+
+>>> x=int(input("Enter any no: "))
+Enter any no: 12
+>>> if x<0:
+...     x=0
+...     print("Negative changed to zero..")
+... elif x==0:
+...     print('Zero')
+... elif x==1:
+...     print('One')
+... else:
+...     print('More')
+... 
+More
+>>> 
+
+>>> animals=['cat','dog','rat']
+>>> for i in animals:
+...     print(i,len(i))
+... 
+cat 3
+dog 3
+rat 3
+>>> 
+
+>>> for i in range(5):
+...     print(i,end=',')
+... 
+0,1,2,3,4,>>>
+
+>>> for i in range(5):
+...     print(i,end="\n")
+... 
+0
+1
+2
+3
+4
+>>>
+
+>>> list(range(5,10))
+[5, 6, 7, 8, 9]
+>>> 
+>>> list(range(0,10,3))
+[0, 3, 6, 9]
+>>> 
+>>> list(range(-10,-100,-30))
+[-10, -40, -70]
+>>> 
+
+
+>>> animals
+['cat', 'dog', 'rat']
+>>> animals.append('doggy')
+>>> animals
+['cat', 'dog', 'rat', 'doggy']
+>>> for i in range(len(animals)):
+...     print(i,animals[i])
+... 
+0 cat
+1 dog
+2 rat
+3 doggy
+>>> 
+
+
+>>> sum(range(4)) # 0+1+2+3
+6
+>>>
+
+# Prime program will be added in near future
+
+# Fibonacci series
+
+>>> def fib(n):
+...     a,b=0,1
+...     while a<n:
+...             print(a,end=' ')
+...             a,b=b,a+b
+...     print()
+... 
+>>> 
+>>> fib(100)
+0 1 1 2 3 5 8 13 21 34 55 89 
+>>> 
+>>> fib
+<function fib at 0x7ff4e614e950>
+>>> 
+>>> f=fib
+>>> f(100)
+0 1 1 2 3 5 8 13 21 34 55 89 
+>>> 
+
+
+>>> fib(0)
+
+>>> print(fib(0))
+None
+>>> 
+
+# Fibonnaci series different way
+
+>>> def fib2(n):
+...     result=[]
+...     a,b=0,1
+...     while a<n:
+...             result.append(a)
+...             a,b=b,a+b
+...     return result
+... 
+>>> 
+>>> fib2(100)
+[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+>>> 
+>>> f100=fib2
+>>> f100(100)
+[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+>>> 
+
+
+[cloudshell-user@ip-10-0-18-135 Python]$ cat -n prompt.py 
+     1  #!/usr/bin/python
+     2
+     3  # create a function
+     4  def ask_ok(prompt,retries=4,reminder='Please try again..'):
+     5      while True:
+     6          ok=input(prompt)
+     7          if ok in ('y','ye','yes'):
+     8              return True
+     9          if ok in ('n','no','nop','nope'):
+    10              return False
+    11          retries = retries - 1
+    12          if retries < 0:
+    13              raise ValueError ('Invalid user response...')
+    14          print(reminder)
+    15
+    16  ask_ok('Do you really want to quit?')   
+[cloudshell-user@ip-10-0-18-135 Python]$ 
+[cloudshell-user@ip-10-0-18-135 Python]$ ./prompt.py 
+Do you really want to quit?1
+Please try again..
+Do you really want to quit?2
+Please try again..
+Do you really want to quit?3
+Please try again..
+Do you really want to quit?4
+Please try again..
+Do you really want to quit?5
+Traceback (most recent call last):
+  File "./prompt.py", line 16, in <module>
+    ask_ok('Do you really want to quit?')   
+  File "./prompt.py", line 13, in ask_ok
+    raise ValueError ('Invalid user response...')
+ValueError: Invalid user response...
+[cloudshell-user@ip-10-0-18-135 Python]$
+
+[cloudshell-user@ip-10-0-18-135 Python]$ cat -n prompt.py 
+     1  #!/usr/bin/python
+     2
+     3  # create a function
+     4  def ask_ok(prompt,retries=4,reminder='Please try again..'):
+     5      while True:
+     6          ok=input(prompt)
+     7          if ok in ('y','ye','yes'):
+     8              return True
+     9          if ok in ('n','no','nop','nope'):
+    10              return False
+    11          retries = retries - 1
+    12          if retries < 0:
+    13              raise ValueError ('Invalid user response...')
+    14          print(reminder)
+    15
+    16  #ask_ok('Do you really want to quit?')
+    17  ask_ok('Ok to overwrite the file?',2)
+[cloudshell-user@ip-10-0-18-135 Python]$ ./prompt.py 
+Ok to overwrite the file?1
+Please try again..
+Ok to overwrite the file?2
+Please try again..
+Ok to overwrite the file?3
+Traceback (most recent call last):
+  File "./prompt.py", line 17, in <module>
+    ask_ok('Ok to overwrite the file?',2)
+  File "./prompt.py", line 13, in ask_ok
+    raise ValueError ('Invalid user response...')
+ValueError: Invalid user response...
+[cloudshell-user@ip-10-0-18-135 Python]$ 
+
+# Tries in all 3 ways
+
+[cloudshell-user@ip-10-0-18-135 Python]$ cat -n prompt.py 
+     1  #!/usr/bin/python
+     2
+     3  # create a function
+     4  def ask_ok(prompt,retries=4,reminder='Please try again..'):
+     5      while True:
+     6          ok=input(prompt)
+     7          if ok in ('y','ye','yes'):
+     8              return True
+     9          if ok in ('n','no','nop','nope'):
+    10              return False
+    11          retries = retries - 1
+    12          if retries < 0:
+    13              raise ValueError ('Invalid user response...')
+    14          print(reminder)
+    15
+    16  #ask_ok('Do you really want to quit?')
+    17  #ask_ok('Ok to overwrite the file?',2)
+    18  ask_ok('Ok to overwrite the files ?',2,'Come on, only yes or no')
+    
+  # keyword arguments
+  
+  
+
+
+
+
