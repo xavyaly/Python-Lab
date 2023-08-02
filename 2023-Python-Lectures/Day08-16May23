@@ -1,0 +1,181 @@
+javedalam@Javeds-MacBook-Air PythonLabs % python3
+Python 3.11.3 (main, Apr  7 2023, 20:13:31) [Clang 14.0.0 (clang-1400.0.29.202)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from urllib.request import urlopen
+>>> with urlopen('http://worldtimeapi.org/api/timezone/etc/UTC.txt') as response:
+...     for line in response:
+...     line = line.decode()
+  File "<stdin>", line 3
+    line = line.decode()
+    ^
+IndentationError: expected an indented block after 'for' statement on line 2
+>>> 
+>>> # Data and Time
+>>> 
+>>> from datetime import date
+>>> now = data.today()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'data' is not defined. Did you mean: 'date'?
+>>> 
+>>> from datetime import date
+>>> now = date.today()
+>>> now
+datetime.date(2023, 5, 16)
+>>> 
+>>> now.strftime("%m-%d-%y. %d %b %Y is a %A on the %d day of %B.")
+'05-16-23. 16 May 2023 is a Tuesday on the 16 day of May.'
+>>> 
+>>> old = date(1988, 3, 13)
+>>> age = now - old
+>>> age
+datetime.timedelta(days=12847)
+>>> 
+>>> # Data compression
+>>> 
+>>> import zlib
+>>> dir(zlib)
+['DEFLATED', 'DEF_BUF_SIZE', 'DEF_MEM_LEVEL', 'MAX_WBITS', 'ZLIB_RUNTIME_VERSION', 'ZLIB_VERSION', 'Z_BEST_COMPRESSION', 'Z_BEST_SPEED', 'Z_BLOCK', 'Z_DEFAULT_COMPRESSION', 'Z_DEFAULT_STRATEGY', 'Z_FILTERED', 'Z_FINISH', 'Z_FIXED', 'Z_FULL_FLUSH', 'Z_HUFFMAN_ONLY', 'Z_NO_COMPRESSION', 'Z_NO_FLUSH', 'Z_PARTIAL_FLUSH', 'Z_RLE', 'Z_SYNC_FLUSH', 'Z_TREES', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '__version__', 'adler32', 'compress', 'compressobj', 'crc32', 'decompress', 'decompressobj', 'error']
+>>> 
+>>> s = b'where exactly you were now a dats'
+>>> len(s)
+33
+>>> 
+>>> com = zlib.compress(s)
+>>> len(s)
+33
+>>> 
+>>> s = b'witch which has which witches wrist watch'
+>>> len(s)
+41
+>>> com = zlib.compress(s)
+>>> len(s)
+41
+>>> 
+>>> s = 'witch which has which witches wrist watch'
+>>> len(s)
+41
+>>> 
+>>> com = zlib.compress(s)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: a bytes-like object is required, not 'str'
+>>> 
+>>> com = zlib.compress(s)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: a bytes-like object is required, not 'str'
+>>> 
+>>> s = b'witch which has which witches wrist watch'
+>>> len(s)
+41
+>>> t = zlib.compress(s)
+>>> len(t)
+37
+>>> 
+>>> 
+>>> import zlib
+>>> s = b'witch which has which witches wrist watch'
+>>> len(s)
+41
+>>> 
+>>> t = zlib.compress(s)
+>>> len(t)
+37
+>>> 
+>>> zlib.decompress(t)
+b'witch which has which witches wrist watch'
+>>> 
+>>> len(t)
+37
+>>> len(s)
+41
+>>> 
+>>> zlib.crc32(s)
+226805979
+>>> 
+>>> r = zlib.decompress(t)
+>>> len(r)
+41
+>>> 
+>>> # Output Formatting
+>>> 
+>>> import reprlib
+>>> reprlib.repr(set('agruiehguwifbisgfhighsr'))
+"{'a', 'b', 'e', 'f', 'g', 'h', ...}"
+>>> 
+>>> import pprint
+>>> row = [[[['black','red'],'orage',['greeb','blue']],[['purple','yelloe'],'green']]]
+>>> pprint.pprint((t,width=30)
+  File "<stdin>", line 1
+    pprint.pprint((t,width=30)
+                     ^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+>>> pprint.pprint((row, width=30)
+  File "<stdin>", line 1
+    pprint.pprint((row, width=30)
+                        ^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+>>> 
+>>> pprint.pprint((row, width = 30)
+  File "<stdin>", line 1
+    pprint.pprint((row, width = 30)
+                        ^^^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+>>> 
+>>> pprint.pprint((row, width == 30)
+... 
+... 
+... 
+KeyboardInterrupt
+>>> 
+>>> pprint.pprint((row, width=30))
+  File "<stdin>", line 1
+    pprint.pprint((row, width=30))
+                        ^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+>>> 
+>>> pprint.pprint((row, width==30))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'width' is not defined
+>>> 
+>>> pprint.pprint(row, width=30)
+[[[['black', 'red'],
+   'orage',
+   ['greeb', 'blue']],
+  [['purple', 'yelloe'],
+   'green']]]
+>>> 
+>>> 
+>>> import pprint
+>>> row = [[[['black','red'],'orage',['greeb','blue']],[['purple','yelloe'],'green']]]
+>>> pprint.pprint((row, width==30))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'width' is not defined
+>>> pprint.pprint(row, width=30)
+[[[['black', 'red'],
+   'orage',
+   ['greeb', 'blue']],
+  [['purple', 'yelloe'],
+   'green']]]
+>>> 
+>>> 
+>>> # Example
+>>> 
+>>> import textwrap
+>>> doc = """The wrap() method is just like fill() except that it returns
+... a list of strings instead of one big string with newlines to separate
+... the wrapped lines."""
+>>> 
+>>> doc
+'The wrap() method is just like fill() except that it returns\na list of strings instead of one big string with newlines to separate\nthe wrapped lines.'
+>>> 
+>>> print(textwrap.fill(doc, width=40))
+The wrap() method is just like fill()
+except that it returns a list of strings
+instead of one big string with newlines
+to separate the wrapped lines.
+>>> 
+>>> 

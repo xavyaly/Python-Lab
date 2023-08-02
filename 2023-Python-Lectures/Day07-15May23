@@ -1,0 +1,268 @@
+python3
+Python 3.11.3 (main, Apr  7 2023, 20:13:31) [Clang 14.0.0 (clang-1400.0.29.202)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> from textblob import TextBlob
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'textblob'
+>>> 
+>>> import textblob
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'textblob'
+>>> 
+>>> def divide(i,j):
+...     try: 
+...             result = i/j
+...     except ZeroDivisionError:
+...             print("divided by zero")
+...     else:
+...             print("result is: ", result)
+...     finally:
+...             print("finally execute...")
+... 
+>>> divide(2,1)
+result is:  2.0
+finally execute...
+>>> 
+>>> divide(2,0)
+divided by zero
+finally execute...
+>>> 
+>>> divide("3","1")
+finally execute...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 3, in divide
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+>>> 
+>>> 
+>>> #Iterators
+>>> 
+>>> for element in [1,2,3]:
+...     print(element)
+... 
+1
+2
+3
+>>> [element for element in (1,2,3)]
+[1, 2, 3]
+>>> 
+>>> [char for char in "1234"]
+['1', '2', '3', '4']
+>>> 
+>>> [(line,end=' ') for line in open("file-path")]
+  File "<stdin>", line 1
+    [(line,end=' ') for line in open("file-path")]
+           ^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+>>> 
+>>> str = "abcd"
+>>> it = iter(str)
+>>> it
+<str_ascii_iterator object at 0x100d339a0>
+>>> 
+>>> next(it)
+'a'
+>>> next(it)
+'b'
+>>> next(it)
+'c'
+>>> next(it)
+'d'
+>>> next(it)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+>>> 
+>>> # Generators
+>>> 
+>>> [i for i in reverse("string")]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'reverse' is not defined. Did you mean: 'reversed'?
+>>> 
+>>> def reverse(data):
+...     for i in range(len(data)-1,-1,-1):
+...             yield(data[index])
+... 
+>>> 
+>>> [i for i in reverse("string")]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 1, in <listcomp>
+  File "<stdin>", line 3, in reverse
+NameError: name 'index' is not defined
+>>> 
+>>> 
+>>> 
+>>> def reverse(data):
+...     for i in range(len(data)-1,-1,-1):
+...             yield(data[i])
+... 
+>>> [i for i in reverse("string")]
+['g', 'n', 'i', 'r', 't', 's']
+>>> 
+>>> # Another way
+>>> 
+>>> str = "string"
+>>> print(string[::-1])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'string' is not defined
+>>> 
+>>> str = "string"
+>>> print(str[::-1])
+gnirts
+>>> 
+>>> # Generators Expressions
+>>> 
+>>> sum(i*i for i in range(5))
+30
+>>> 
+>>> sum(i*i for i in range(10))
+285
+>>> 
+>>> lst1 = [10,20,40]
+>>> lst2 = [2,3,5]
+>>> sum(i*j for i,j in zip(lst1,lst2))
+280
+>>> 
+>>> # Set 
+>>> 
+>>> str = "stringgggg"
+>>> print(set(string))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'string' is not defined
+>>> 
+>>> print(set(str))
+{'t', 'n', 's', 'i', 'g', 'r'}
+>>> 
+>>> # Modules 
+>>> 
+>>> import os 
+>>> dir(os)
+['CLD_CONTINUED', 'CLD_DUMPED', 'CLD_EXITED', 'CLD_KILLED', 'CLD_STOPPED', 'CLD_TRAPPED', 'DirEntry', 'EX_CANTCREAT', 'EX_CONFIG', 'EX_DATAERR', 'EX_IOERR', 'EX_NOHOST', 'EX_NOINPUT', 'EX_NOPERM', 'EX_NOUSER', 'EX_OK', 'EX_OSERR', 'EX_OSFILE', 'EX_PROTOCOL', 'EX_SOFTWARE', 'EX_TEMPFAIL', 'EX_UNAVAILABLE', 'EX_USAGE', 'F_LOCK', 'F_OK', 'F_TEST', 'F_TLOCK', 'F_ULOCK', 'GenericAlias', 'Mapping', 'MutableMapping', 'NGROUPS_MAX', 'O_ACCMODE', 'O_APPEND', 'O_ASYNC', 'O_CLOEXEC', 'O_CREAT', 'O_DIRECTORY', 'O_DSYNC', 'O_EVTONLY', 'O_EXCL', 'O_EXEC', 'O_EXLOCK', 'O_FSYNC', 'O_NDELAY', 'O_NOCTTY', 'O_NOFOLLOW', 'O_NOFOLLOW_ANY', 'O_NONBLOCK', 'O_RDONLY', 'O_RDWR', 'O_SEARCH', 'O_SHLOCK', 'O_SYMLINK', 'O_SYNC', 'O_TRUNC', 'O_WRONLY', 'POSIX_SPAWN_CLOSE', 'POSIX_SPAWN_DUP2', 'POSIX_SPAWN_OPEN', 'PRIO_PGRP', 'PRIO_PROCESS', 'PRIO_USER', 'P_ALL', 'P_NOWAIT', 'P_NOWAITO', 'P_PGID', 'P_PID', 'P_WAIT', 'PathLike', 'RTLD_GLOBAL', 'RTLD_LAZY', 'RTLD_LOCAL', 'RTLD_NODELETE', 'RTLD_NOLOAD', 'RTLD_NOW', 'R_OK', 'SCHED_FIFO', 'SCHED_OTHER', 'SCHED_RR', 'SEEK_CUR', 'SEEK_DATA', 'SEEK_END', 'SEEK_HOLE', 'SEEK_SET', 'ST_NOSUID', 'ST_RDONLY', 'TMP_MAX', 'WCONTINUED', 'WCOREDUMP', 'WEXITED', 'WEXITSTATUS', 'WIFCONTINUED', 'WIFEXITED', 'WIFSIGNALED', 'WIFSTOPPED', 'WNOHANG', 'WNOWAIT', 'WSTOPPED', 'WSTOPSIG', 'WTERMSIG', 'WUNTRACED', 'W_OK', 'X_OK', '_Environ', '__all__', '__builtins__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_check_methods', '_execvpe', '_exists', '_exit', '_fspath', '_fwalk', '_get_exports_list', '_spawnvef', '_walk', '_wrap_close', 'abc', 'abort', 'access', 'altsep', 'chdir', 'chflags', 'chmod', 'chown', 'chroot', 'close', 'closerange', 'confstr', 'confstr_names', 'cpu_count', 'ctermid', 'curdir', 'defpath', 'device_encoding', 'devnull', 'dup', 'dup2', 'environ', 'environb', 'error', 'execl', 'execle', 'execlp', 'execlpe', 'execv', 'execve', 'execvp', 'execvpe', 'extsep', 'fchdir', 'fchmod', 'fchown', 'fdopen', 'fork', 'forkpty', 'fpathconf', 'fsdecode', 'fsencode', 'fspath', 'fstat', 'fstatvfs', 'fsync', 'ftruncate', 'fwalk', 'get_blocking', 'get_exec_path', 'get_inheritable', 'get_terminal_size', 'getcwd', 'getcwdb', 'getegid', 'getenv', 'getenvb', 'geteuid', 'getgid', 'getgrouplist', 'getgroups', 'getloadavg', 'getlogin', 'getpgid', 'getpgrp', 'getpid', 'getppid', 'getpriority', 'getsid', 'getuid', 'initgroups', 'isatty', 'kill', 'killpg', 'lchflags', 'lchmod', 'lchown', 'linesep', 'link', 'listdir', 'lockf', 'login_tty', 'lseek', 'lstat', 'major', 'makedev', 'makedirs', 'minor', 'mkdir', 'mkfifo', 'mknod', 'name', 'nice', 'open', 'openpty', 'pardir', 'path', 'pathconf', 'pathconf_names', 'pathsep', 'pipe', 'popen', 'posix_spawn', 'posix_spawnp', 'pread', 'preadv', 'putenv', 'pwrite', 'pwritev', 'read', 'readlink', 'readv', 'register_at_fork', 'remove', 'removedirs', 'rename', 'renames', 'replace', 'rmdir', 'scandir', 'sched_get_priority_max', 'sched_get_priority_min', 'sched_yield', 'sendfile', 'sep', 'set_blocking', 'set_inheritable', 'setegid', 'seteuid', 'setgid', 'setgroups', 'setpgid', 'setpgrp', 'setpriority', 'setregid', 'setreuid', 'setsid', 'setuid', 'spawnl', 'spawnle', 'spawnlp', 'spawnlpe', 'spawnv', 'spawnve', 'spawnvp', 'spawnvpe', 'st', 'stat', 'stat_result', 'statvfs', 'statvfs_result', 'strerror', 'supports_bytes_environ', 'supports_dir_fd', 'supports_effective_ids', 'supports_fd', 'supports_follow_symlinks', 'symlink', 'sync', 'sys', 'sysconf', 'sysconf_names', 'system', 'tcgetpgrp', 'tcsetpgrp', 'terminal_size', 'times', 'times_result', 'truncate', 'ttyname', 'umask', 'uname', 'uname_result', 'unlink', 'unsetenv', 'urandom', 'utime', 'wait', 'wait3', 'wait4', 'waitpid', 'waitstatus_to_exitcode', 'walk', 'write', 'writev']
+>>> 
+>>> import os
+>>> os.getcwd()
+'/Users/javedalam/Documents/git/devops-lab/3-python-labs/PythonLabs'
+>>> 
+>>> os.chdir('/Users/javedalam/Documents/git/devops-lab/3-python-labs')
+>>> os.getcwd()
+'/Users/javedalam/Documents/git/devops-lab/3-python-labs'
+>>> 
+>>> os.chdir('/Users/javedalam/Documents/git/devops-lab/3-python-labs/PythonLabs')
+>>> os.getcwd()
+'/Users/javedalam/Documents/git/devops-lab/3-python-labs/PythonLabs'
+>>> 
+>>> # WildCards
+>>> 
+>>> import glob
+>>> glob.glob('*.py')
+['fibo.py', 'sample-collection.py', 'enum.py']
+>>> 
+>>> dir(glob)
+['__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_dir_open_flags', '_glob0', '_glob1', '_glob2', '_iglob', '_isdir', '_ishidden', '_isrecursive', '_iterdir', '_join', '_lexists', '_listdir', '_rlistdir', 'contextlib', 'escape', 'fnmatch', 'glob', 'glob0', 'glob1', 'has_magic', 'iglob', 'itertools', 'magic_check', 'magic_check_bytes', 'os', 're', 'stat', 'sys']
+>>> 
+>>> # Command Line Arguemnts 
+>>> 
+>>> import sys
+>>> print(sys.argv)
+['']
+>>> 
+>>> # String pattern matching
+>>> 
+>>> import re
+>>> re.findall(r'\bf[a-z]*')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: findall() missing 1 required positional argument: 'string'
+>>> 
+>>> dir(re)
+['A', 'ASCII', 'DEBUG', 'DOTALL', 'I', 'IGNORECASE', 'L', 'LOCALE', 'M', 'MULTILINE', 'Match', 'NOFLAG', 'Pattern', 'RegexFlag', 'S', 'Scanner', 'T', 'TEMPLATE', 'U', 'UNICODE', 'VERBOSE', 'X', '_MAXCACHE', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', '_cache', '_casefix', '_compile', '_compile_repl', '_compiler', '_constants', '_expand', '_parser', '_pickle', '_special_chars_map', '_subx', 'compile', 'copyreg', 'enum', 'error', 'escape', 'findall', 'finditer', 'fullmatch', 'functools', 'match', 'purge', 'search', 'split', 'sub', 'subn', 'template']
+>>> 
+>>> import re
+>>> re.findall(r'\bf[a-z]*','hello man how are you')
+[]
+>>> 
+>>> re.findall(r'\bf[a-z]*','which foot or hand fell fastest')
+['foot', 'fell', 'fastest']
+>>> 
+>>> re.sub(r'(\b[a-z]+) \1', r'\1', 'cat in the the rat')
+'cat in the rat'
+>>> 
+>>> 'tea of spoon'.replace('tea','too')
+'too of spoon'
+>>> 
+>>> # MAth
+>>> 
+>>> import math
+>>> dir(math)
+['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'cbrt', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'exp2', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'lcm', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'nextafter', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc', 'ulp']
+>>> 
+>>> import random
+>>> random.choice(['apple','banana','pears'])
+'banana'
+>>> random.choice(['apple','banana','pears'])
+'apple'
+>>> random.choice(['apple','banana','pears'])
+'pears'
+>>> random.choice(['apple','banana','pears'])
+'banana'
+>>> 
+>>> random.sample(range(10,20))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: Random.sample() missing 1 required positional argument: 'k'
+>>> 
+>>> random.sample(range(10),2))
+  File "<stdin>", line 1
+    random.sample(range(10),2))
+                              ^
+SyntaxError: unmatched ')'
+>>> 
+>>> random.sample(range(10),2)
+[1, 7]
+>>> 
+>>> random.sample(range(10),2)
+[6, 8]
+>>> 
+>>> random.random()
+0.872163426981971
+>>> 
+>>> random.random()
+0.8458971979132511
+>>> random.randrandom(6)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'random' has no attribute 'randrandom'. Did you mean: 'randrange'?
+>>> 
+>>> random.randrange(6)
+5
+>>> 
+>>> random.randrange(6)
+3
+>>>
+>>> 
+>>> import statistics
+>>> 
+>>> data = [2.75, 1.75, 1.25, 0.25, 0.5, 1.25, 3.5]
+>>> statistics.mean(data)
+1.6071428571428572
+>>> statistics.median(data)
+1.25
+>>> statistics.variance(data)
+1.3720238095238095
+>>> 
+>>> 
+>>> import math
+>>> math.cos(math.pi / 4)
+0.7071067811865476
+>>> 
+>>> math.log(1024, 2)
+10.0
+>>> 
+>>> 

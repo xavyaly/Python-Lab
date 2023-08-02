@@ -1,0 +1,221 @@
+bash-3.2$ python3 
+Python 3.9.6 (default, Mar 10 2023, 20:16:38) 
+[Clang 14.0.3 (clang-1403.0.22.14.1)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> str = "Hello World!!!"
+>>> print(str)
+Hello World!!!
+>>> 
+>>> repr(str)
+"'Hello World!!!'"
+>>> 
+>>> str(1/9)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object is not callable
+>>> 
+>>> a = 10*3.26
+>>> b = 20*20
+>>> a
+32.599999999999994
+>>> b
+400
+>>> s1 = 'The value of a is ' + repr(a) + ', and b is ' + repr(b) + '...'
+>>> print(s1)
+The value of a is 32.599999999999994, and b is 400...
+>>> 
+>>> # Formatting Strings
+>>> 
+>>> dir(amth)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'amth' is not defined
+>>> 
+>>> import math
+>>> dir(amth)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'amth' is not defined
+>>> dir(math)
+['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'lcm', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'nextafter', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc', 'ulp']
+>>> 
+>>> import math
+>>> print('The value of pi is approximately {math.pi: .3f}')
+The value of pi is approximately {math.pi: .3f}
+>>> print(f'The value of pi is approximately {math.pi: .3f}')
+The value of pi is approximately  3.142
+>>> 
+>>> dic = {'java':1000,'python':2000}
+>>> for book,pages in dic.items():
+...     print("{book} ==> {pages}")
+... 
+{book} ==> {pages}
+{book} ==> {pages}
+>>> 
+>>> for book,pages in dic.items():
+...     print(f"{book} ==> {pages}")
+... 
+java ==> 1000
+python ==> 2000
+>>> 
+>>> # String format
+>>> 
+>>> print("The value of {} and {} are ".format('java',1000))
+The value of java and 1000 are 
+>>> 
+>>> print("The value of {} and {}.".format('java',1000))
+The value of java and 1000.
+>>> 
+>>> print("The value of {0} and {1}.".format('java',1000))
+The value of java and 1000.
+>>> 
+>>> for i in range(1,11):
+...     print('{0:2d} {1:3d} {2:4d}'.format(i,i*i,i*i*i))
+... 
+ 1   1    1
+ 2   4    8
+ 3   9   27
+ 4  16   64
+ 5  25  125
+ 6  36  216
+ 7  49  343
+ 8  64  512
+ 9  81  729
+10 100 1000
+>>> 
+>>> 
+>>> for i in range(1,11):
+...     print('{0} {1} {2}'.format(i,i*i,i*i*i))
+... 
+1 1 1
+2 4 8
+3 9 27
+4 16 64
+5 25 125
+6 36 216
+7 49 343
+8 64 512
+9 81 729
+10 100 1000
+>>> 
+>>> for i in range(1,11):
+...     print(repr(i),rjust(2),repr(i*i),rjust(3), end=' ')
+...     print(repr(i*i*i),rjust(4))
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+NameError: name 'rjust' is not defined
+>>> 
+>>> import rjust
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'rjust'
+>>> 
+>>> '10'.zfill()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: str.zfill() takes exactly one argument (0 given)
+>>> 
+>>> '10'.zfill(5)
+'00010'
+>>> 
+>>> '3.15'.zfill(9)
+'000003.15'
+>>> 
+>>> '3.1556789875456'.zfill(5)
+'3.1556789875456'
+>>> 
+>>> '-3.15'.zfill(9)
+'-00003.15'
+>>> 
+>>> import math
+>>> print('The value of pi is approximately %4.3f.',%math.pi)
+  File "<stdin>", line 1
+    print('The value of pi is approximately %4.3f.',%math.pi)
+                                                    ^
+SyntaxError: invalid syntax
+>>> 
+>>> print('The value of pi is approximately %4.3f.',% math.pi)
+  File "<stdin>", line 1
+    print('The value of pi is approximately %4.3f.',% math.pi)
+                                                    ^
+SyntaxError: invalid syntax
+>>> 
+>>> # Ignore becaue of old format
+>>> 
+>>> # Reading and Writing Files
+>>> 
+>>> f = open('workfile','w',encoding="utf-8")
+>>>
+>>> f
+<_io.TextIOWrapper name='workfile' mode='w' encoding='utf-8'>
+>>> 
+>>> with open('workfile','w',encoding="utf-8") as f:
+...     read_data = f.read()
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+io.UnsupportedOperation: not readable
+>>> 
+>>> # Errors and Exceptions
+>>> 
+>>> 1/0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+>>> 
+>>> while True print("hello world!!!")
+  File "<stdin>", line 1
+    while True print("hello world!!!")
+               ^
+SyntaxError: invalid syntax
+>>> 
+>>> 11*(1/0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+>>> 
+>>> 2 + tee*3
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tee' is not defined
+>>> 
+>>> '5' + 2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> 
+>>> # Handling Exceptions
+>>> 
+>>> while True:
+...     try:
+...     a = input("Please enter a value: ")
+  File "<stdin>", line 3
+    a = input("Please enter a value: ")
+    ^
+IndentationError: expected an indented block
+>>> 
+>>> while True:
+...     a = int(input("Please enter a value: "))
+...     break 
+...     
+[12]+  Stopped                 python3
+bash-3.2$ 
+
+>>> import sys
+>>> 
+>>> try:
+...     f = open('myfile.txt')
+...     s = f.readline()
+...     i = int(s.strip())
+... except OSError as err:
+...     print("OS error:", err)
+... except ValueError:
+...     print("Could not convert data to an integer.")
+... except Exception as err:
+...     print(f"Unexpected {err=}, {type(err)=}")
+...     raise
+... 
+OS error: [Errno 2] No such file or directory: 'myfile.txt'
+>>> 

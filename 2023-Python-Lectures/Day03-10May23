@@ -1,0 +1,470 @@
+bash-3.2$ python3 
+Python 3.9.6 (default, Mar 10 2023, 20:16:38) 
+[Clang 14.0.3 (clang-1403.0.22.14.1)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> list = [1,4,9,16,25]
+>>> list
+[1, 4, 9, 16, 25]
+>>> 
+>>> list[0]
+1
+>>> 
+>>> list[-1]
+25
+>>> 
+>>> list[-3:]
+[9, 16, 25]
+>>> 
+>>> list
+[1, 4, 9, 16, 25]
+>>> list[:]
+[1, 4, 9, 16, 25]
+>>> 
+>>> list + [36,49,64]
+[1, 4, 9, 16, 25, 36, 49, 64]
+>>> 
+>>> list.append(81)
+>>> list
+[1, 4, 9, 16, 25, 81]
+>>> 
+>>> list.append(10*10)
+>>> list
+[1, 4, 9, 16, 25, 81, 100]
+>>> 
+>>> len(list)
+7
+>>> 
+>>> a=['a','b','c']
+>>> n=[1,2,3]
+>>> x=[a,n]
+>>> x
+[['a', 'b', 'c'], [1, 2, 3]]
+>>> 
+>>> x[0]
+['a', 'b', 'c']
+>>> x[0][0]
+'a'
+>>> 
+>>> x[1][0]
+1
+>>> 
+>>> a,b=0,1
+>>> a
+0
+>>> b
+1
+>>> a,b=1,0
+>>> a
+1
+>>> b
+0
+>>> a,b=0,1
+>>> while a<10:
+...     print(a)
+...     a,b=b,a+b
+... 
+0
+1
+1
+2
+3
+5
+8
+>>> 
+>>> #Fibonacci series
+>>> 
+>>> a,b=0,1
+>>> while a<1000:
+...     print(a)
+...     a,b=b,a+b
+... 
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
+610
+987
+>>> 
+>>> # for loop in python
+>>> 
+>>> for i in range(0,100,5):
+...     print(i)
+... 
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+>>> 
+>>> square = [1,4,9,16,25]
+>>> for i in range(square):
+...     print(i)
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'list' object cannot be interpreted as an integer
+>>> 
+>>> for i in square:
+...     print(i,len(i))
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+TypeError: object of type 'int' has no len()
+>>> 
+>>> square = [1,4,9,16,25]
+>>> for i in square:
+...     print(i,len(i))
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+TypeError: object of type 'int' has no len()
+>>> 
+>>> 
+>>> len(square)
+5
+>>> 
+>>> string = ['a','b','c']
+>>> for i in square:
+...     print(i,len(i))
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+TypeError: object of type 'int' has no len()
+>>> 
+>>> string = ['a','b','c']
+>>> for i in string:
+...     print(i,len(i))
+... 
+a 1
+b 1
+c 1
+>>> 
+>>> string = ['java','program','python']
+>>> for i in string:
+...     print(i,len(i))
+... 
+java 4
+program 7
+python 6
+
+bash-3.2$ python3 
+Python 3.9.6 (default, Mar 10 2023, 20:16:38) 
+[Clang 14.0.3 (clang-1403.0.22.14.1)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+>>> dir(range)
+['__bool__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index', 'start', 'step', 'stop']
+>>> 
+>>> range(5,10)
+range(5, 10)
+>>> 
+>>> list(range(5,10))
+[5, 6, 7, 8, 9]
+>>> 
+>>> list(range(0,5,10))
+[0]
+>>> list(range(0,5,2))
+[0, 2, 4]
+>>> 
+>>> # program 
+>>> 
+>>> a = ['I','Have','Done','some','changes']
+>>> 
+>>> for i in range(len(a)):
+...     print(i,a[i])
+... 
+0 I
+1 Have
+2 Done
+3 some
+4 changes
+>>> 
+>>> range(5,10)
+range(5, 10)
+>>> list(range(5,10))
+[5, 6, 7, 8, 9]
+>>> sum(range(5,10))
+35
+>>> 
+>>> # break 
+>>> 
+>>> for n in range(2,10):
+...     for x in range(2,n):
+...             if n%x == 0:
+...                     print(n,'equals',x,'*',n//x)
+...                     break
+...     else:
+...             print(n, 'is a prime number')
+... 
+2 is a prime number
+3 is a prime number
+4 equals 2 * 2
+5 is a prime number
+6 equals 2 * 3
+7 is a prime number
+8 equals 2 * 4
+9 equals 3 * 3
+>>> 
+>>> for x in range(1,101):
+... for y in range(2,x):
+  File "<stdin>", line 2
+    for y in range(2,x):
+    ^
+IndentationError: expected an indented block
+if x%y==0:break
+else:
+print (x,sep=' ', end=' ')>>> if x%y==0:break
+... else:
+... print (x,sep=' ', end=' ')
+  File "<stdin>", line 3
+    print (x,sep=' ', end=' ')
+    ^
+IndentationError: expected an indented block
+>>> 
+>>> for x in range(1,101):
+...     for y in range(2,x):
+...             for y in range(2,x):
+...     else:
+  File "<stdin>", line 4
+    else:
+IndentationError: expected an indented block
+>>> 
+>>> for x in range(1,101):
+...     for y in range(2,x):
+...             if x%y == 0; break 
+  File "<stdin>", line 3
+    if x%y == 0; break 
+               ^
+SyntaxError: invalid syntax
+>>> 
+>>> for x in range(1,101):
+...     for y in range(2,x):
+...             if x%y == 0: break
+...     else:
+...             print(x,sep=' ',end = ' ')
+... 
+1 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 >>> 
+>>> 
+>>> 
+>>> # 1 is not a prime no
+>>> 
+>>> for x in range(2,101):
+... 
+  File "<stdin>", line 2
+    
+    ^
+IndentationError: expected an indented block
+>>> 
+>>> for x in range(2,101):
+...     for y in range(2,x):
+...             if x%y == 0: break
+... 
+>>> 
+>>> for x in range(2,101):
+...     for y in range(2,x):
+...             if x%y == 0: break
+...     else:
+...             print(x,sep=' ',end = ' ')
+... 
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 >>> 
+>>> 
+
+>>> # even odd 
+>>> 
+>>> for num in range(2,10):
+...     if num % 2 == 0:
+...             print("Even no", num)
+...     else:
+...             print("Odd no", num)
+... 
+Even no 2
+Odd no 3
+Even no 4
+Odd no 5
+Even no 6
+Odd no 7
+Even no 8
+Odd no 9
+>>> 
+>>> a = input("Enter an no: ")
+Enter an no: 2
+>>> 
+
+>>> # lambda expressions in python
+
+>>> def increment(n):
+...     return lambda x: x+n
+... 
+>>> 
+>>> f = increment(24)
+>>> f(0)
+24
+>>> f(1)
+25
+>>> f(2)
+26
+>>> 
+
+>>> pairs = [(1,'one'),(2,'two'),(3,'three')]
+>>> pairs[0]
+(1, 'one')
+>>> pairs[1]
+(2, 'two')
+>>> pairs[2]
+(3, 'three')
+>>> 
+>>> pairs = [(1,'one'),(2,'two'),(3,'three')]
+>>> pairs.sort(key=lambda pair: pair[1])
+>>> pairs
+[(1, 'one'), (3, 'three'), (2, 'two')]
+>>> 
+>>> pairs = [(1,'one'),(2,'two'),(3,'three'),(4,'four')]
+>>> pairs.sort(key=lambda pair: pair[1])
+>>> pairs
+[(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]
+>>> 
+>>> str = 'hellohowru'
+>>> rev_upper = lambda string: string.upper()[::-1]
+>>> print(rev_upper(str))
+URWOHOLLEH
+>>> 
+>>> str
+'hellohowru'
+>>> print(str[::-1])
+urwoholleh
+>>> 
+>>> '''single quotation'''
+'single quotation'
+>>> """single quotation"""
+'single quotation'
+>>> 'single quotation'
+'single quotation'
+>>> 
+>>> # documentation string
+>>> 
+>>> def my_function():
+...     """Let's do nothing at 
+...     at here"""
+...     pass
+... 
+>>> print(my_fucntion.__doc__)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'my_fucntion' is not defined
+>>> 
+>>> print(my_fucntion._doc_)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'my_fucntion' is not defined
+>>> 
+>>> # list
+>>> 
+>>> fruits = ['apple','banana','pear','guava','apple','banana']
+>>> fruits.count()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list.count() takes exactly one argument (0 given)
+>>> 
+>>> fruits.count('apple')
+2
+>>> fruits.index('apple')
+0
+>>> 
+>>> fruits.index('apple')
+0
+>>> fruits.revers()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'revers'
+>>> 
+>>> fruits.reverse()
+>>> fruits
+['banana', 'apple', 'guava', 'pear', 'banana', 'apple']
+>>> 
+>>> fruits.append('lemon')
+>>> fruits
+['banana', 'apple', 'guava', 'pear', 'banana', 'apple', 'lemon']
+>>> 
+>>> fruits.sort()
+>>> fruits
+['apple', 'apple', 'banana', 'banana', 'guava', 'lemon', 'pear']
+>>> 
+>>> fruits.pop()
+'pear'
+>>> fruits
+['apple', 'apple', 'banana', 'banana', 'guava', 'lemon']
+>>> 
+>>> # Using List as Stack 
+>>> 
+>>> stack = [1,2,3,4,5]
+>>> stack[0]
+1
+>>> stack.append(3)
+>>> stack 
+[1, 2, 3, 4, 5, 3]
+>>> stack.pop()
+3
+>>> stack.sort()
+>>> stack
+[1, 2, 3, 4, 5]
+>>> 
+>>> # List comprehensions
+>>> 
+>>> square = []
+>>> for i in range(10):
+...     square.append(i**2)
+... 
+>>> sqaure
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sqaure' is not defined
+>>> square
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+>>> 
+>>> square = list(map(lambda x: x**2, range(10)))
+>>> square
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+>>> 
+>>> square = list(map(lambda x: x**2, range(12)))
+>>> square
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121]
+>>> 
+>>> cube = [x**3 for x in range(12)]
+>>> cube
+[0, 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000, 1331]
+>>> 
+>>> 
+
+
+
+
+
+
+

@@ -1,0 +1,338 @@
+
+% python3 --version
+Python 3.9.6
+javedalam@Javeds-MacBook-Air PythonLabs % python3          
+Python 3.9.6 (default, Mar 10 2023, 20:16:38) 
+[Clang 14.0.3 (clang-1403.0.22.14.1)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2=2
+  File "<stdin>", line 1
+    2=2
+    ^
+SyntaxError: cannot assign to literal
+>>> 2+2
+4
+>>> 2**3
+8
+>>> 2+3*6
+20
+>>> (2+3)*6
+30
+>>> 3758*3647
+13705426
+>>> 
+>>> 20/7
+2.857142857142857
+>>> 
+>>> 23%7
+2
+>>> 1     +       1
+2
+>>> (1+2) * (2-3) ** (1+1)
+3
+>>> 
+>>> 
+>>> 5 + 
+  File "<stdin>", line 1
+    5 + 
+        ^
+SyntaxError: invalid syntax
+>>> 
+>>> 2 + 3 *  - 2 
+-4
+>>> 
+>>> 2 + 3 - * 2
+  File "<stdin>", line 1
+    2 + 3 - * 2
+            ^
+SyntaxError: invalid syntax
+>>> 
+>>> 
+>>> 'hello world!'
+'hello world!'
+>>> 
+>>> 'hello world!
+  File "<stdin>", line 1
+    'hello world!
+                 ^
+SyntaxError: EOL while scanning string literal
+>>> 
+>>> 'ja' 'va'
+'java'
+>>> 
+>>> 'ja'+'va'
+'java'
+>>> 
+>>> 'ja' + 32
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> 
+>>> 'ja' * 5 
+'jajajajaja'
+>>> 
+>>> 'ja' * 'va'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> 
+>>> 'ja' * 5.0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'float'
+>>> 
+>>> a=40
+>>> a
+40
+>>> a,b=20,30
+>>> a
+20
+>>> b
+30
+>>> a+b
+50
+>>> a+b+b
+80
+>>> a=a+20
+>>> a
+40
+>>> 
+>>> print(a)
+40
+>>> 
+>>> str='hello'
+>>> str
+'hello'
+>>> str="world"
+>>> str
+'world'
+>>> 
+>>> a=input("Enter any random digit: ")
+Enter any random digit: 10
+>>> a=input("Enter any random digit: ")
+Enter any random digit: 20
+>>> a
+'20'
+>>> 
+>>> len('hello')
+5
+>>> len('hellowojfhsdhfuohi')
+18
+>>> 
+>>> dir(len)
+['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__name__', '__ne__', '__new__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__self__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__']
+>>> 
+>>> dir(math)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'math' is not defined
+>>> 
+>>> len('')
+0
+>>> 
+>>> import math
+>>> dir(math)
+['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'lcm', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'nextafter', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'tau', 'trunc', 'ulp']
+>>> 
+>>> 
+>>> print('You have'+10+'biscuits')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> 
+>>> print('You have'+'biscuits')
+You havebiscuits
+>>> print('You have'+''+'biscuits')
+You havebiscuits
+>>> print('You have'+' '+'biscuits')
+You have biscuits
+>>> 
+>>> str(10)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object is not callable
+>>> 
+>>> print('You have'+str(10)+'biscuits')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object is not callable
+>>> 
+>>> print('You have'+"10"+'biscuits')
+You have10biscuits
+>>> 
+>>> print('You have'+' '+"10"+' '+biscuits')
+  File "<stdin>", line 1
+    print('You have'+' '+"10"+' '+biscuits')
+                                            ^
+SyntaxError: EOL while scanning string literal
+>>> 
+>>> print('You have'+' '+"10"+' '+'biscuits')
+You have 10 biscuits
+>>> 
+>>> str(10)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object is not callable
+>>> 
+>>> str(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object is not callable
+>>> 
+>>> str(2.3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object is not callable
+>>> 
+>>> int('42')
+42
+>>> 
+>>> int(1.99)
+1
+>>> 
+>>> float('20.20')
+20.2
+>>> 
+>>> float('20')
+20.0
+>>> 
+>>> a=input()
+10
+>>> a
+'10'
+>>> 
+>>> int('10.00')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '10.00'
+>>> 
+>>> 
+>>> a=True
+>>> a
+True
+>>> true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined
+>>> true=2+3
+>>> true
+5
+>>> 
+>>> 2=2
+  File "<stdin>", line 1
+    2=2
+    ^
+SyntaxError: cannot assign to literal
+>>> 
+>>> 2==2
+True
+>>> 2==3
+False
+>>> 2!=3
+True
+>>> 2!=2
+False
+>>> 
+>>> 
+>>> 'hello'=='hello'
+True
+>>> 'hello'=='hEllo'
+False
+>>> 
+>>> True != False
+True
+>>> 
+>>> 1 == 1.0 
+True
+>>> 
+>>> 1 == '1'
+False
+>>> 
+>>> 1<100
+True
+>>> 1>100
+False
+>>> 
+>>> a=35
+>>> a>40
+False
+>>> 
+>>> True and True
+True
+>>> True and False
+False
+>>> 
+>>> True or False
+True
+>>> True or True
+True
+>>> 
+>>> type(1)
+<class 'int'>
+>>> type(1.0)
+<class 'float'>
+>>> type('1.0')
+<class 'str'>
+>>> 
+>>> (1<2) and (2<3)
+True
+>>> 
+>>> (1<2) or (2<3)
+True
+>>> 
+>>> (1<2) or (2>3)
+True
+>>> (1>2) or (2>3)
+False
+>>> 
+>>> a="java"
+>>> b='password'
+>>> 
+>>> if a == 'java'
+  File "<stdin>", line 1
+    if a == 'java'
+                  ^
+SyntaxError: invalid syntax
+>>> 
+>>> if a == 'java':
+... print('hello java')
+  File "<stdin>", line 2
+    print('hello java')
+    ^
+IndentationError: expected an indented block
+>>> 
+>>> if a == 'java':
+...     print('hello java')
+...     if b == 'password':
+...             print('access given')
+...     else:
+...             print('denied')
+... 
+hello java
+access given
+>>> 
+>>> 
+>>> if a == 'java':
+...     print('hello java')
+...     if b == 'passwords':
+...             print('access given')
+...     else:
+...             print('denied')
+... 
+hello java
+denied
+>>> 
+>>> a='java'
+>>> b=200
+>>> if a == 'c++':
+...     print('wrong input')
+... elif b < 10:
+...     print('you are not java')
+... elif b > 100:
+...     print('you are not c')
+... elif b > 10:
+...     print('add a proper input')
+... 
+you are not c
+>>> 
+>>> 
