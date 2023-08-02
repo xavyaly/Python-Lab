@@ -3,9 +3,6 @@
 def find_max_min(lst):
     return max(lst), min(lst)
 
-# lst = input("Enter a list of elements: ")
-# print (find_max_min(lst))
-
 input_list = input("Enter a list of numbers separated by spaces: ").split()
 input_list = [int(num) for num in input_list]
 
