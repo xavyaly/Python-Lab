@@ -11,3 +11,24 @@ Q: 2
 Q: 3
 # Write a program which can compute the factorial of a given numbers.
 # The results should be printed in a comma-separated sequence on a single line.
+
+Q: 4
+# Write a Python program to reverse a string.
+
+Q: 5
+# Write a Python function to check if a given word is a palindrome.
+
+Q: 6
+# Write a Python function to remove duplicates from a list.
+
+Q: 7
+# Write a Python program to count the occurrences of each element in a list.
+
+Q: 8
+# Write a Python function to find the maximum and minimum elements in a list.
+
+Q: 9
+# Write a Python program to sort a list of tuples based on the second element of each tuple.
+
+Q: 10
+# Write a Python program to find the common elements between two lists.
