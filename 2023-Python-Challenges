@@ -44,3 +44,6 @@ Q: 13
 
 Q: 14
 # Python Program to Copy One File to Another File without removing the contents of another file
+
+Q: 15
+# Python Program to Copy One File to Another File and append the contents of destination file
