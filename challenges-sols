@@ -480,6 +480,90 @@ if __name__ == "__main__":
 
 # ------------------------------------------------------------------------------------------------
 
-# Q-16:
-# 
+# Q-16: 
+# [Link](https://www.youtube.com/watch?v=vshqLskHXYY)
+# [Link](https://github.com/kiritbasu/Fake-Apache-Log-Generator/blob/master/apache-fake-log-gen.py)
+
+# a
+
+# To print all log file 
+
+f = open('log_file.log','r')
+for line in f:
+    print(line)
+
+# b
+
+# To print the type of every line 
+
+f = open('log_file.log','r')
+for line in f:
+    print type(line)
+
+# c
+
+# To split the lines of a file  
+
+f = open('log_file.log','r')
+for line in f:
+    print line.split(' ')
+
+# d
+
+# To split the lines of a file  -> IP of the first element and rest words as second element
+
+f = open('log_file.log','r')
+for line in f:
+    print line.split(' - - ')
+
+# e
+
+# To split the lines of a file  -> Print all IPs only
+
+f = open('log_file.log','r')
+for line in f:
+    print line.split(' - - ')[0]
+
+
+# f
+
+# To split the line by date and time 
+
+f = open('log_file.log','r')
+for line in f:
+    print line.split(']')
+
+# g
+
+# To split the line and fetch the date and time only -> Imp
+
+f = open('log_file.log','r')
+for line in f:
+    print line.split(' ]')[0].split('[')[1].split('2013')[1][1:]
+
+
+# h
+
+# To split the line and fetch the date only -> Imp
+
+f = open('log_file.log','r')
+for line in f:
+    print line.split(' ]')[0].split('[')[1].split(':')[0]
+
+# i
+
+# To split the line and fetch the date only -> Imp
+
+f = open('log_file.log','r')
+for line in f:
+    print line.split(' ]')[0].split('[')[1].split(':')[0]
+
+# ---
+
+
+# ------------------------------------------------------------------------------------------------
+
+
+
+
 
