@@ -23,9 +23,9 @@ print("The sum of all elements in the list is:", result)
 # Enter a list of numbers separated by spaces: 10 20 30 1000
 # The sum of all elements in the list is: 1060
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
-#------------------------------------------------------------------------------------------------------------------------#
+## ------------------------------------------------------------------------------------------------------------------------#
 # Question 1
 
 # Write a program which will find all such numbers which are divisible by 11 but are not a multiple of 2,
@@ -53,9 +53,9 @@ print(",".join(str(num) for num in result))
 # $ python3 divisible.py 
 # 1001,1023,1045,1067,1089,1111,1133,1155,1177,1199
 
-#------------------------------------------------------------------------------------------------------------------------#
+## ------------------------------------------------------------------------------------------------------------------------#
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 # Write a Python function to check if a given number is prime.
 
@@ -84,9 +84,9 @@ print(is_prime(n))
 # Enter a no to check prime : 1923
 # False
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
-#------------------------------------------------------------------------------------------------------------------------#
+## ------------------------------------------------------------------------------------------------------------------------#
 # Question 2
 
 # Write a program which can compute the factorial of a given numbers.
@@ -126,9 +126,9 @@ print (fact(x))
 # Enter a number: 10
 # 3628800
 
-#------------------------------------------------------------------------------------------------------------------------#
+## ------------------------------------------------------------------------------------------------------------------------#
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 # Write a Python program to reverse a string.
 
@@ -148,7 +148,7 @@ print(reverse_a_string(str))
 # Enter a string: agfhfkjhsd
 # dshjkfhfga
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 # Write a Python function to check if a given word is a palindrome.
 
@@ -172,7 +172,7 @@ print(is_palindrome(str))
 # Enter a string: malayalam           
 # True
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 # Write a Python function to remove duplicates from a list.
 
@@ -196,7 +196,7 @@ print(remove_duplicates(str))
 # Enter a string: malayalam
 # ['m', 'y', 'l', 'a']
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 # Write a Python program to count the occurrences of each element in a list.
 
@@ -221,7 +221,7 @@ print (count_occurances(str))
 # Enter a string: 112233aabbccdd
 # Counter({'1': 2, '2': 2, '3': 2, 'a': 2, 'b': 2, 'c': 2, 'd': 2})
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 # Write a Python function to find the maximum and minimum elements in a list.
 
@@ -248,7 +248,7 @@ print("Max and Min of list is: ", result)
 # Enter a list of numbers separated by spaces: 123 234 345 456 567 678 789
 # Max and Min of list is: (789, 123)
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 # Write a Python program to sort a list of tuples based on the second element of each tuple.
 
@@ -265,7 +265,7 @@ print (sort_list_of_tuples(lst))
 # python3 9-sort.py 
 # [('bihar', 600), ('kolkata', 900), ('bengal', 1100), ('bangalore', 1200)]
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 # Write a Python program to find the common elements between two lists.
 
@@ -301,7 +301,7 @@ print(find_common_elements(lst1,lst2))
 # Enter lst2 of elements: 1 24 46 56
 # [1]
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 # Write a Python program to find the second largest element in a list.
 
@@ -339,7 +339,7 @@ if __name__ == "__main__":
 # python3 11-second-largest.py 
 # Second largest element: 9
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 # Write a Python function to check if two strings are anagrams of each other.
 
@@ -371,7 +371,7 @@ if __name__ == "__main__":
 # python3 12-anagrams.py 
 # The strings are anagrams.
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 # Write a Python Program to read the contents of a file
 
@@ -399,7 +399,7 @@ if __name__ == "__main__":
 
 # Make sure to provide the correct file path in the `file_path` variable for the program to read the contents of your desired file.
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
 # Python Program to Copy One File to Another File without removing the contents of another file
 
@@ -433,8 +433,9 @@ if __name__ == "__main__":
 
 # Please make sure to provide the correct file paths in `source_file_path` and `destination_file_path` for the program to copy the contents properly.
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
 
+# Q-15:
 # Python Program to Copy One File to Another File and append the contents of destination file
 
 # To copy the contents of one file to another file in Python and append the contents of the destination file, you can read the contents from both files, concatenate them, and then write the result into the destination file. Here's a Python program to achieve that:
@@ -477,4 +478,8 @@ if __name__ == "__main__":
 # python3 15-append-contents-to-destination.py 
 # File copied and appended successfully.
 
-------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------
+
+# Q-16:
+# 
+
