@@ -153,3 +153,5 @@ GUI Programming
 
 Sending email
 
+	Cross check whether mail triggered ?
+
